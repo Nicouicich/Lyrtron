@@ -1,0 +1,223 @@
+@charset 'UTF-8';
+.slick-dots li,
+.slick-dots li button {
+    cursor: pointer;
+    height: 10px;
+    width: 10px
+}
+
+.slick-loading .slick-list {
+    background: url(ajax-loader.gif) center center no-repeat #fff
+}
+
+@font-face {
+    font-family: slick;
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/slick.eot);
+    src: url(fonts/slick.eot?#iefix) format('embedded-opentype'), url(fonts/slick.woff) format('woff'), url(fonts/slick.ttf) format('truetype'), url(fonts/slick.svg#slick) format('svg')
+}
+
+.slick-arrow-next,
+.slick-arrow-prev {
+    width: 48px;
+    border: none;
+    position: absolute;
+    top: -80px;
+    cursor: pointer;
+    z-index: 150;
+    transition: all .3s ease;
+}
+
+
+.slick-arrow-prev:hover, .slick-arrow-next:hover {
+    opacity: 0.6;
+}
+
+.slick-arrow-prev {
+    left: 89%;
+}
+
+.slick-arrow-next {
+    right: 1%;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 0;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline: 0
+}
+
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: none;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* CARROUSEL FOTOS */
+.carrousel-fotos .slick-dots {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center
+}
+
+.carrousel-fotos .slick-dots li,
+.carrousel-fotos .slick-dots li button {
+    height: 8px;
+    width: 8px
+}
+
+.carrousel-fotos .slick-dots li button:before {
+    width: 8px;
+    height: 8px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:450px) {
+    .slick-arrow-prev {
+        right: auto;
+        left: -10%;
+        top: 75%;
+        }
+
+    .slick-arrow-next {
+        right: -10%;
+        top: 75%;
+    }
+}
+
+
+
+/* BOB HOVER*/
+@-webkit-keyframes hvr-bob-prev {
+    0%,
+    100% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px)
+    }
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateX(-4px)
+    }
+}
+
+@keyframes hvr-bob-prev {
+    0%,
+    100% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px)
+    }
+    50% {
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px)
+    }
+}
+
+@-webkit-keyframes hvr-bob-prev-float {
+    100% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px)
+    }
+}
+
+@keyframes hvr-bob-prev-float {
+    100% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px)
+    }
+}
+
+@-webkit-keyframes hvr-bob-next {
+    0%,
+    100% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px)
+    }
+    50% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px)
+    }
+}
+
+@keyframes hvr-bob-next {
+    0%,
+    100% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px)
+    }
+    50% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px)
+    }
+}
+
+@-webkit-keyframes hvr-bob-next-float {
+    100% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(-8px)
+    }
+}
+
+@keyframes hvr-bob-next-float {
+    100% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px)
+    }
+}

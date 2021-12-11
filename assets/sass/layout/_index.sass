@@ -1,0 +1,243 @@
+header
+  position: absolute
+  top: 2%
+  left: 5%
+  margin: 0 auto
+  padding: 10px 25px
+  background: rgba(255,255,255,0.3)
+  backdrop-filter: blur(15px)
+  border-radius: 20px
+  width: 90%
+  +flexbox(row,wrap,space-between,center,center)
+  nav
+    +flexbox(row,wrap,space-between,center,center)
+    list-style: none
+    background: rgba(0,0,0,0.5)
+    backdrop-filter: blur(50px)
+    border-radius: 20px
+    blur: 15px
+    color: $white
+    width: 30%
+    padding: 10px 25px
+    
+  .logo
+    width: 10%
+    img
+      max-width: 80%
+    
+  
+.slider
+  background-image: url('./assets/images/bg-slider.png')
+  background-position: top
+  background-repeat: no-repeat
+  background-size: 100%
+  width: 100vw
+  height: 150vh
+  .info-container
+    padding: 20% 0% 0 60%
+    .text
+      font-size: 350%
+      line-height: 1.2
+      color: $white
+      text-transform: uppercase
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+      width: 80%
+    .logo
+      margin-top: 25px
+    .btn
+      background: $principal
+      color: $white
+      border-radius: 20px
+      font-family: $font-text
+      width: 25%
+      +flexbox(row,wrap,center,center,center)
+      padding: 10px 15px
+      text-align: center
+      margin: 20px 0
+      &::after
+        content: ""
+.proposal
+  +flexbox(row,wrap,space-between,center,center)
+  width: 100%
+  margin-top: -33.5vh
+  background: url('assets/images/proposal-bg.svg')
+  background-position: top left
+  background-repeat: no-repeat
+  .column-70
+    width: 100%
+    padding: 10% 5% 10% 55%
+    h1
+      font-size: 300%
+    p
+      font-size: 110%
+      margin: 30px 0
+      width: 55%
+    .proposal-ping
+      margin: 20px 0 
+      display: block
+  .chipset
+    min-height: 60vh
+    height: auto
+    background: url('assets/images/chipset.svg')
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    transform: translateX(-80px)
+
+.services
+  padding-top: 30%
+  background: url('assets/images/ourservices-bg.svg')
+  background-position: top
+  background-repeat: no-repeat
+  .icon-container
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    gap: 10px
+    margin: 30px 0
+    .icon
+      +flexbox(row,wrap,center,center,center)
+      .icon-image
+      h3
+        font-size: 100%
+        font-weight: $medium
+        text-align: center
+        width: 50%
+  .column-50
+    p
+      font-size: 110%
+      margin: 30px 0 80px 0
+      width: 100%
+      line-height: 1.5
+  .servicios-grupo img
+    max-width: 100%
+  .contenedor
+    justify-content: center
+    .btn
+      padding: 15px 100px
+
+.development
+  padding: 10% 0
+  justify-content: center
+  position: relative
+  .page-bg
+    position: absolute
+    width: 100%
+    height: 50vh
+    top: 0
+    background: url('assets/images/dev-bg.png')
+    background-position: top
+    background-repeat: no-repeat
+    filter: grayscale(100%)
+    backdrop-filter: opacity(0.3)
+  h1
+    text-align: center
+    width: 100%
+    font-size: 300%
+    padding-top: 5%
+  .slider-dev
+    margin: 50px 0 !important
+  .slide
+    +flexbox(row,wrap,center,center,center)
+    padding: 20px 50px
+    margin: 0 20px
+    background: #838383
+    border-radius: 15px
+    h3
+      margin: 0 auto
+      width: 90%
+      min-height: 120px
+      padding: 25px 0
+      text-align: center
+      font-weight: $medium
+    .btn
+      width: 60%
+.partners
+  height: 115vh
+  background: url('assets/images/partners-bg.svg')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 5% 10%
+  .title-bg  
+    width: 50%
+    padding: 15px 0
+    margin: 30px auto 80px auto
+    border-radius: 50px
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .4)
+    background: rgba(255,255,255,0.1)
+    h1
+      text-align: center
+      font-size: 300%
+  .partners-3
+    width: 70%
+    padding: 10px 0
+    margin: 10px auto
+    +flexbox(row,wrap,space-between,center,center)
+  .partners-4
+    width: 90%
+    padding: 10px 0
+    margin: 10px auto
+    +flexbox(row,wrap,space-between,center,center)
+
+.contact
+  padding: 10% 0
+  .column-50 
+    p
+      width: 60%
+    form
+      width: 100%
+      margin-top: 60px
+      +flexbox(row,wrap,flex-start,center,center)
+      input, textarea
+        width: 100%
+        background: rgba(255,255,255,0.1)
+        outline: none
+        border: unset
+        color: $white
+        border-radius: 20px
+        padding: 10px 25px
+        margin: 10px 0
+    .info-container
+      background-color: #41976d
+      padding: 10px 20px 20px 40px
+      border-radius: 20px
+      box-shadow: inset 0px 3px 10px 0px rgba(255, 255, 255, 0.4)
+      border-bottom-left-radius: 20px
+      border-bottom-right-radius: 20px
+      height: 45vh
+      padding: 5% 
+      +flexbox(row,wrap,space-between,flex-start,flex-start)
+      .logo
+        width: 30%
+      .details
+        width: 70%
+        text-align: right
+        img
+          max-width: 50%
+      .data
+        width: 100%
+        margin-top: 80px
+        +flexbox(row,wrap,space-between,flex-start,flex-start)
+      .points
+        width: 10%
+      ul
+        list-style: none
+        width: 90%
+        +flexbox(row,wrap,flex-start,center,center)
+        li
+          width: 100%
+          margin: 20px 0
+          font-size: 120%
+          +flexbox(row,wrap,flex-start,center,center)
+          &:first-of-type
+            margin: 5px 0 25px 0
+          img
+            width: 25px
+          span
+            width: 80%
+            padding-left: 5%
+    iframe
+      width: 100%

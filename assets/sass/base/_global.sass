@@ -1,0 +1,41 @@
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+img
+	max-width: 100%
+body
+	background: $dark-gray
+	color: $white
+	overflow-x: hidden
+.contenedor
+	width: 100%
+	margin: 0 auto
+	padding: 0 20%
+	+flexbox(row,wrap,space-between,flex-start,flex-start)
+	&.full
+		padding: unset
+.column-50
+	width: 50%
+	padding: 0 5%
+	h1
+		font-size: 300%
+.separator
+	position: absolute
+	width: 100%
+	top: 170vh 
+	img
+		max-width: 100%
+		
+.btn
+	background: $principal
+	color: $white
+	border-radius: 20px
+	font-family: $font-text
+	+flexbox(row,wrap,center,center,center)
+	padding: 10px 15px
+	text-align: center
+	margin: 20px auto
+
+.slick-slide
+	opacity: 1 !important
