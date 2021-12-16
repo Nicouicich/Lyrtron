@@ -145,6 +145,9 @@ header
     margin: 0 20px
     background: #838383
     border-radius: 15px
+    img
+      width: 450px
+      height: 350px
     h3
       margin: 0 auto
       width: 90%
@@ -241,3 +244,44 @@ header
             padding-left: 5%
     iframe
       width: 100%
+.popup
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top:0
+  +flexbox(row,wrap,center,center,center)
+  display: none
+  .popup-container
+    width: 70vw
+    height: auto
+    background: $light-gray
+    color: $white
+    border-radius: 20px
+    padding: 5% 2%
+    margin: 10% auto 0 auto
+    +flexbox(row,wrap,space-between,flex-start,flex-start)
+    position: relative
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4)
+    .close
+      position: absolute
+      top: 30px
+      right: 30px
+      cursor: pointer
+    .column-50
+      width: 49%
+      padding: 0
+      h1
+        width: 80%
+        font-size: 200%
+      p
+        font-size: 90%
+        line-height: 2
+        width: 80%
+      &:nth-of-type(2)
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        gap: 20px
+    .logo
+      position: absolute
+      bottom: 30px 
+      left: 3%
