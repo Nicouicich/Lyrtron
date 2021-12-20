@@ -125,17 +125,37 @@ header .logo {
 header .logo img {
   max-width: 80%;
 }
+@media screen and (max-width: 1100px) {
+  header nav {
+    width: 50%;
+  }
+  header .logo {
+    width: 20%;
+  }
+}
 
 .slider {
   background-image: url("./assets/images/bg-slider.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100vw;
+  width: 100%;
   height: 150vh;
 }
 .slider .info-container {
-  padding: 20% 0% 0 60%;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.slider .info-container .col-60 {
+  width: 60%;
+}
+.slider .info-container .col-40 {
+  width: 40%;
 }
 .slider .info-container .text {
   font-size: 350%;
@@ -156,7 +176,8 @@ header .logo img {
   color: #fff;
   border-radius: 20px;
   font-family: "Lato", sans-serif !important;
-  width: 25%;
+  min-width: 25%;
+  max-width: 40%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -170,37 +191,84 @@ header .logo img {
 .slider .info-container .btn::after {
   content: "";
 }
+@media screen and (max-width: 1100px) {
+  .slider {
+    height: 100vh;
+  }
+  .slider .info-container .col-40 .text {
+    font-size: 250%;
+  }
+  .slider .info-container .col-40 .btn {
+    min-width: 25%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .slider {
+    background-size: cover;
+  }
+  .slider .info-container .col-40 {
+    padding-top: 5%;
+  }
+  .slider .info-container .col-40 .text {
+    font-size: 200%;
+  }
+  .slider .info-container .col-40 .btn {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider {
+    background-position: 10% -40%;
+  }
+  .slider .info-container .col-60 {
+    display: none;
+  }
+  .slider .info-container .col-40 {
+    width: 100%;
+    padding: 25% 10% 10% 10%;
+  }
+  .slider .info-container .col-40 .text {
+    font-size: 250%;
+  }
+  .slider .info-container .col-40 .logo {
+    text-align: center;
+    margin-top: 90px;
+  }
+  .slider .info-container .col-40 .btn {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
 
 .proposal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   width: 100%;
   margin-top: -33.5vh;
-  background: url("assets/images/proposal-bg.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
-.proposal .column-70 {
-  width: 100%;
-  padding: 10% 5% 10% 55%;
+.proposal .column-50 {
+  width: 50%;
+  padding: 10%;
 }
-.proposal .column-70 h1 {
+.proposal .column-50 h1 {
   font-size: 300%;
 }
-.proposal .column-70 p {
+.proposal .column-50 p {
   font-size: 110%;
   margin: 30px 0;
   width: 55%;
 }
-.proposal .column-70 .proposal-ping {
+.proposal .column-50 .proposal-ping {
   margin: 20px 0;
   display: block;
 }
 .proposal .chipset {
+  padding: unset;
   min-height: 60vh;
   height: auto;
   background: url("assets/images/chipset.svg");
@@ -208,6 +276,41 @@ header .logo img {
   background-repeat: no-repeat;
   background-size: cover;
   transform: translateX(-80px);
+  margin-top: -10px;
+}
+@media screen and (max-width: 1100px) {
+  .proposal {
+    margin-top: -25vh;
+  }
+  .proposal .column-50 {
+    width: 100%;
+    padding: 0 5%;
+    text-align: center;
+  }
+  .proposal .column-50 p {
+    width: 100%;
+  }
+  .proposal .chipset {
+    background-size: contain;
+    margin-top: unset;
+    background-position: -30% -100%;
+    transform: translateY(-20%) translateX(-80px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .proposal {
+    margin-top: -11.5vh;
+  }
+  .proposal .chipset {
+    transform: translateY(-20%) translateX(-30%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .proposal .chipset {
+    transform: unset;
+    background-size: cover;
+    background-position: 120%;
+  }
 }
 
 .services {
@@ -250,6 +353,36 @@ header .logo img {
 }
 .services .contenedor .btn {
   padding: 15px 100px;
+}
+@media screen and (max-width: 1100px) {
+  .services {
+    background: url("assets/images/separator.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .services .contenedor {
+    padding-top: 10%;
+  }
+  .services .contenedor .column-50 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .services .contenedor {
+    padding: 0 5%;
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services .contenedor {
+    padding-top: 80%;
+  }
+  .services .contenedor.full {
+    padding-top: unset;
+  }
+  .services .contenedor .column-50.servicios-grupo {
+    display: none;
+  }
 }
 
 .development {
@@ -304,6 +437,21 @@ header .logo img {
 .development .slide .btn {
   width: 60%;
 }
+@media screen and (max-width: 1100px) {
+  .development h1 {
+    padding-top: 15%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .development h1 {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .development h1 {
+    padding-top: 45%;
+  }
+}
 
 .partners {
   height: 115vh;
@@ -346,6 +494,46 @@ header .logo img {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+@media screen and (max-width: 1100px) {
+  .partners {
+    padding: 5%;
+  }
+  .partners .title-bg {
+    width: 70%;
+  }
+  .partners .partners-3 {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .partners .partners-3 img {
+    max-width: 30%;
+  }
+  .partners .partners-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  .partners .partners-4 img {
+    max-width: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .partners .title-bg {
+    width: 100%;
+  }
+  .partners .title-bg h1 {
+    font-size: 200%;
+  }
 }
 
 .contact {
@@ -446,6 +634,22 @@ header .logo img {
 }
 .contact .column-50 iframe {
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .contact .column-50 {
+    width: 100%;
+  }
+  .contact .column-50 .info-container ul li {
+    margin: 14px 0;
+    font-size: 100%;
+    padding-left: 10px;
+  }
+  .contact .column-50 .info-container ul li img {
+    width: 20px;
+  }
+  .contact .column-50 .info-container ul li:first-of-type {
+    margin: 5px 0 20px 0;
+  }
 }
 
 .popup {

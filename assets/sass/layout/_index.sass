@@ -19,11 +19,15 @@ header
     color: $white
     width: 30%
     padding: 10px 25px
-    
   .logo
     width: 10%
     img
       max-width: 80%
+  @media screen and (max-width: $break-lg)
+    nav
+      width: 50%
+    .logo
+      width: 20%
     
   
 .slider
@@ -31,10 +35,15 @@ header
   background-position: top
   background-repeat: no-repeat
   background-size: 100%
-  width: 100vw
+  width: 100%
   height: 150vh
   .info-container
-    padding: 20% 0% 0 60%
+    padding-top: 20%
+    +flexbox(row,wrap,space-between,flex-start,flex-start)
+    .col-60
+      width: 60%
+    .col-40
+      width: 40%
     .text
       font-size: 350%
       line-height: 1.2
@@ -52,23 +61,53 @@ header
       color: $white
       border-radius: 20px
       font-family: $font-text
-      width: 25%
+      min-width: 25%
+      max-width: 40%
       +flexbox(row,wrap,center,center,center)
       padding: 10px 15px
       text-align: center
       margin: 20px 0
       &::after
         content: ""
+  @media screen and (max-width: $break-lg)
+    height:100vh
+    .info-container .col-40 
+      .text
+        font-size: 250%
+      .btn
+        min-width: 25%
+  @media screen and (max-width: $break-md)
+    background-size: cover
+    .info-container .col-40
+      padding-top: 5%
+      .text
+        font-size: 200%
+      .btn
+        max-width: 50%
+  @media screen and (max-width: $break-sm)
+    background-position: 10% -40%
+    .info-container
+      .col-60
+        display: none
+      .col-40
+        width: 100%
+        padding: 25% 10% 10% 10%
+        .text
+          font-size: 250%
+        .logo
+          text-align: center
+          margin-top: 90px
+        .btn
+          margin: 0 auto
+          margin-top: 30px
 .proposal
-  +flexbox(row,wrap,space-between,center,center)
+  +flexbox(row,wrap,space-between,flex-start,flex-start)
   width: 100%
   margin-top: -33.5vh
-  background: url('assets/images/proposal-bg.svg')
-  background-position: top left
-  background-repeat: no-repeat
-  .column-70
-    width: 100%
-    padding: 10% 5% 10% 55%
+  overflow: hidden
+  .column-50
+    width: 50%
+    padding: 10%
     h1
       font-size: 300%
     p
@@ -79,6 +118,7 @@ header
       margin: 20px 0 
       display: block
   .chipset
+    padding: unset
     min-height: 60vh
     height: auto
     background: url('assets/images/chipset.svg')
@@ -86,7 +126,29 @@ header
     background-repeat: no-repeat
     background-size: cover
     transform: translateX(-80px)
-
+    margin-top: -10px
+  @media screen and (max-width: $break-lg)
+    margin-top: -25vh
+    .column-50
+      width: 100%
+      padding: 0 5%
+      text-align: center
+      p
+        width: 100%
+    .chipset
+      background-size: contain
+      margin-top: unset
+      background-position: -30% -100%
+      transform: translateY(-20%) translateX(-80px)
+  @media screen and (max-width: $break-md)
+    margin-top: -11.5vh
+    .chipset
+      transform: translateY(-20%) translateX(-30%)
+  @media screen and (max-width: $break-sm)
+    .chipset
+      transform: unset
+      background-size: cover
+      background-position: 120%
 .services
   padding-top: 30%
   background: url('assets/images/ourservices-bg.svg')
@@ -117,7 +179,26 @@ header
     justify-content: center
     .btn
       padding: 15px 100px
-
+  @media screen and (max-width: $break-lg)
+    background: url('assets/images/separator.svg')
+    background-repeat: no-repeat
+    background-position: top
+    .contenedor 
+      padding-top: 10%
+      .column-50
+        width: 100%
+  @media screen and (max-width: $break-md)
+    .contenedor 
+      padding: 0 5%
+      padding-top: 20%
+  @media screen and (max-width: $break-sm)
+    .contenedor
+      padding-top: 80%
+      &.full
+        padding-top: unset
+      .column-50
+        &.servicios-grupo
+          display: none
 .development
   padding: 10% 0
   justify-content: center
@@ -157,6 +238,16 @@ header
       font-weight: $medium
     .btn
       width: 60%
+  @media screen and (max-width: $break-lg)
+    h1
+      padding-top: 15%
+  @media screen and (max-width: $break-md)
+    h1
+      padding-top: 20%
+  @media screen and (max-width: $break-sm)
+    h1
+      padding-top: 45%
+
 .partners
   height: 115vh
   background: url('assets/images/partners-bg.svg')
@@ -184,7 +275,25 @@ header
     padding: 10px 0
     margin: 10px auto
     +flexbox(row,wrap,space-between,center,center)
-
+  @media screen and (max-width: $break-lg)
+    padding: 5%
+    .title-bg
+      width: 70%
+    .partners-3
+      width: 85%
+      +flexbox(row,wrap,space-between,center,center)
+      img
+        max-width: 30%
+    .partners-4
+      width: 100%
+      +flexbox(row,wrap,space-between,center,center)
+      img
+        max-width: 15%
+  @media screen and (max-width: $break-sm)
+    .title-bg
+      width: 100%
+      h1
+        font-size: 200%
 .contact
   padding: 10% 0
   .column-50 
@@ -244,6 +353,17 @@ header
             padding-left: 5%
     iframe
       width: 100%
+  @media screen and (max-width: $break-sm)
+    .column-50
+      width: 100%
+      .info-container ul li
+        margin: 14px 0
+        font-size: 100%
+        padding-left: 10px
+        img
+          width: 20px
+      .info-container ul li:first-of-type
+        margin: 5px 0 20px 0
 .popup
   position: fixed
   width: 100vw
