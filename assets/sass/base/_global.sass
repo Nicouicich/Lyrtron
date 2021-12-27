@@ -15,6 +15,15 @@ body
 	+flexbox(row,wrap,space-between,flex-start,flex-start)
 	&.full
 		padding: unset
+		&.work-bg
+			background: url('assets/images/work-bg.svg')
+			background-repeat: no-repeat
+			background-position: 100% -400%
+			padding: 2% 0
+			@media screen and (max-width: $break-xxl)
+				background-position: 140% -10%
+			@media screen and (max-width: $break-md)
+				background: unset
 .column-50
 	width: 50%
 	padding: 0 5%
@@ -36,6 +45,29 @@ body
 	padding: 10px 15px
 	text-align: center
 	margin: 20px auto
+	&:hover
+		background: $white
+		color: $principal
+		transition: all 0.3s ease-in-out
 
 .slick-slide
 	opacity: 1 !important
+
+.slick-arrow-prev
+	top: 16em !important
+	width: 5% !important
+	left: 5% !important
+	@media screen and (max-width: $break-sm)
+		width: 15% !important
+.slick-arrow-next
+	top: 16em !important
+	width: 5% !important
+	right: 5% !important
+	@media screen and (max-width: $break-sm)
+		width: 15% !important
+section
+	transition: all 0.5s ease-in-out
+.is-blured
+	transition: all 0.5s ease-in-out
+	filter: blur(5px)
+

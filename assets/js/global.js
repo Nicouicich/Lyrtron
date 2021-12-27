@@ -101,19 +101,53 @@ const info = [
   },
 ];
 $(document).ready(function () {
+  jQuery(".hamburger").click(function (e) {
+    $('nav').toggleClass('active')
+  })
   $(".slider-dev").slick({
     autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
-    arrows: false,
+    arrows: true,
     dots: true,
     centerMode: true,
+    prevArrow:
+      "<img class='a-left control-c prev slick-prev' src='./assets/images/left-arrow.svg'>",
+    nextArrow:
+      "<img class='a-right control-c next slick-next' src='./assets/images/right-arrow.svg'>",
+    responsive: [
+       {
+         breakpoint: 1366,
+         settings: {
+           slidesToShow: 2,
+           arrows: true,
+           dots: true,
+         }
+       },
+       {
+         breakpoint: 800,
+         settings: {
+           slidesToShow: 1,
+           arrows: true,
+           dots: true,
+         }
+       },
+       {
+         breakpoint: 450,
+         settings: {
+           slidesToShow: 1,
+           arrows: true,
+           dots: true,
+         }
+       }
+     ]
   });
-
 });
+
 function openPopup(id) {
   $('.popup').show()
+  $('section').toggleClass('is-blured')
   infoPopup = info.find((info) => info.id === id);
   $('#title').html(infoPopup.title)
   $('#description').html(infoPopup.description)
@@ -126,5 +160,6 @@ jQuery(document).ready(function () {
   jQuery(".close").click(function (e) {
     e.preventDefault();
     jQuery(".popup").hide();
+     $("section").toggleClass("is-blured");
   });
 });

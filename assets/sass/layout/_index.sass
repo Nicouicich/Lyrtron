@@ -1,13 +1,14 @@
 header
-  position: absolute
+  position: fixed
   top: 2%
   left: 5%
   margin: 0 auto
   padding: 10px 25px
   background: rgba(255,255,255,0.3)
   backdrop-filter: blur(15px)
-  border-radius: 20px
+  border-radius: 40px
   width: 90%
+  z-index: 99999
   +flexbox(row,wrap,space-between,center,center)
   nav
     +flexbox(row,wrap,space-between,center,center)
@@ -23,11 +24,34 @@ header
     width: 10%
     img
       max-width: 80%
-  @media screen and (max-width: $break-lg)
+  .hamburger
+    display: none
+  @media screen and (max-width: $break-xxl)
     nav
       width: 50%
     .logo
       width: 20%
+  @media screen and (max-width: $break-sm)
+    .hamburger
+      display: block
+      cursor: pointer
+      margin-right: 30px
+      img
+        max-width: 20px
+    .logo
+      width: 50%
+    nav
+     display: none
+     background: unset
+     backdrop-filter: none
+     &.active
+       display: flex
+       justify-content: flex-end
+       width: 100%
+       li
+        width: 100%
+        text-align: right
+        margin: 10px 0
     
   
 .slider
@@ -69,6 +93,12 @@ header
       margin: 20px 0
       &::after
         content: ""
+      &:hover
+        background: $white
+        color: $principal
+        transition: all 0.3s ease-in-out
+  @media screen and (max-width: $break-xxl)
+    height: 100vh
   @media screen and (max-width: $break-lg)
     height:100vh
     .info-container .col-40 
@@ -78,12 +108,18 @@ header
         min-width: 25%
   @media screen and (max-width: $break-md)
     background-size: cover
+    background-image: url('./assets/images/slider-mobile-bg.png')
+    background-position: top !important
     .info-container .col-40
       padding-top: 5%
+      padding-left: 5%
+      width: 100%
       .text
-        font-size: 200%
+        font-size: 400%
       .btn
         max-width: 50%
+    .info-containr .col-60
+      display: none
   @media screen and (max-width: $break-sm)
     background-position: 10% -40%
     .info-container
@@ -114,9 +150,12 @@ header
       font-size: 110%
       margin: 30px 0
       width: 55%
-    .proposal-ping
-      margin: 20px 0 
-      display: block
+    .pin-container
+      +flexbox(row,wrap,flex-start,center,center)
+      text-align: left
+      .pin
+        width: 100%
+        text-align: left
   .chipset
     padding: unset
     min-height: 60vh
@@ -127,12 +166,23 @@ header
     background-size: cover
     transform: translateX(-80px)
     margin-top: -10px
+  @media screen and (max-width: $break-xxl)
+    margin-top: 0
+    .chipset
+      background-position: top right
+    .column-50 
+      padding: 5% 10%
+      p
+        width: 100%
+
+  @media screen and (max-width: $break-xl)
+    background: unset
   @media screen and (max-width: $break-lg)
     margin-top: -25vh
     .column-50
       width: 100%
       padding: 0 5%
-      text-align: center
+      text-align: left
       p
         width: 100%
     .chipset
@@ -141,7 +191,7 @@ header
       background-position: -30% -100%
       transform: translateY(-20%) translateX(-80px)
   @media screen and (max-width: $break-md)
-    margin-top: -11.5vh
+    margin-top: 0
     .chipset
       transform: translateY(-20%) translateX(-30%)
   @media screen and (max-width: $break-sm)
@@ -167,6 +217,8 @@ header
         font-weight: $medium
         text-align: center
         width: 50%
+    @media screen and (max-width: $break-sm)
+      grid-template-columns: repeat(2,1fr)
   .column-50
     p
       font-size: 110%
@@ -179,6 +231,10 @@ header
     justify-content: center
     .btn
       padding: 15px 100px
+  @media screen and (max-width: $break-xxl)
+    background-size: contain
+  @media screen and (max-width: $break-xl)
+    
   @media screen and (max-width: $break-lg)
     background: url('assets/images/separator.svg')
     background-repeat: no-repeat
@@ -220,6 +276,8 @@ header
     padding-top: 5%
   .slider-dev
     margin: 50px 0 !important
+    width: 100%
+    overflow: hidden
   .slide
     +flexbox(row,wrap,center,center,center)
     padding: 20px 50px
@@ -229,6 +287,7 @@ header
     img
       width: 450px
       height: 350px
+      object-fit: cover
     h3
       margin: 0 auto
       width: 90%
@@ -238,6 +297,14 @@ header
       font-weight: $medium
     .btn
       width: 60%
+      cursor: pointer
+    @media screen and (max-width: $break-sm)
+      margin: 0 20px
+      padding: 20px 10px
+      
+  @media screen and (max-width: $break-xxl)
+    h1
+      padding-top: 10%
   @media screen and (max-width: $break-lg)
     h1
       padding-top: 15%
@@ -275,7 +342,8 @@ header
     padding: 10px 0
     margin: 10px auto
     +flexbox(row,wrap,space-between,center,center)
-  @media screen and (max-width: $break-lg)
+  @media screen and (max-width: $break-xxl)
+    height: 120vh
     padding: 5%
     .title-bg
       width: 70%
@@ -290,6 +358,7 @@ header
       img
         max-width: 15%
   @media screen and (max-width: $break-sm)
+    height: 100vh
     .title-bg
       width: 100%
       h1
@@ -302,7 +371,7 @@ header
     form
       width: 100%
       margin-top: 60px
-      +flexbox(row,wrap,flex-start,center,center)
+      +flexbox(row,wrap,flex-end,center,center)
       input, textarea
         width: 100%
         background: rgba(255,255,255,0.1)
@@ -312,6 +381,11 @@ header
         border-radius: 20px
         padding: 10px 25px
         margin: 10px 0
+        &::placeholder
+          color: $white
+      .btn
+        min-width: 300px
+        margin: unset
     .info-container
       background-color: #41976d
       padding: 10px 20px 20px 40px
@@ -322,6 +396,8 @@ header
       height: 45vh
       padding: 5% 
       +flexbox(row,wrap,space-between,flex-start,flex-start)
+      @media screen and (max-width: $break-md)
+        height: 35vh
       .logo
         width: 30%
       .details
@@ -329,16 +405,32 @@ header
         text-align: right
         img
           max-width: 50%
+      @media screen and (max-width: $break-xxl)
+        .logo
+          width: 40%
+          margin-top: 10px
+        .details
+          width: 60%
+          img
+            max-width: 80%      
       .data
         width: 100%
         margin-top: 80px
         +flexbox(row,wrap,space-between,flex-start,flex-start)
+        @media screen and (max-width: $break-xxl)
+          margin-top: 40px
+        @media screen and (max-width: $break-md)
+          margin-top: 20px
       .points
         width: 10%
+        @media screen and (max-width: $break-md)
+          display: none
       ul
         list-style: none
         width: 90%
         +flexbox(row,wrap,flex-start,center,center)
+        @media screen and (max-width: $break-md)
+          width: 100%
         li
           width: 100%
           margin: 20px 0
@@ -346,16 +438,23 @@ header
           +flexbox(row,wrap,flex-start,center,center)
           &:first-of-type
             margin: 5px 0 25px 0
+          @media screen and (max-width: $break-md)
+            margin: 10px 0
+            font-size: 100%
+            &:first-of-type
+              margin: 10px 0
           img
             width: 25px
           span
             width: 80%
             padding-left: 5%
+          
     iframe
       width: 100%
   @media screen and (max-width: $break-sm)
     .column-50
       width: 100%
+      margin: 20px 0
       .info-container ul li
         margin: 14px 0
         font-size: 100%
@@ -401,7 +500,17 @@ header
         display: grid
         grid-template-columns: repeat(2,1fr)
         gap: 20px
+      &.images
+        img
+          width: 100%
+          height: 100%
     .logo
       position: absolute
       bottom: 30px 
       left: 3%
+    @media screen and (max-width: $break-md)
+      width: 90vw
+      margin: 20% auto 0 auto
+      .logo
+        left: unset
+        right: 3%
