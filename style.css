@@ -48,22 +48,6 @@ body {
 .contenedor.full {
   padding: unset;
 }
-.contenedor.full.work-bg {
-  background: url("assets/images/work-bg.svg");
-  background-repeat: no-repeat;
-  background-position: 100% -400%;
-  padding: 2% 0;
-}
-@media screen and (max-width: 1600px) {
-  .contenedor.full.work-bg {
-    background-position: 140% -10%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .contenedor.full.work-bg {
-    background: unset;
-  }
-}
 
 .column-50 {
   width: 50%;
@@ -138,6 +122,17 @@ section {
   filter: blur(5px);
 }
 
+footer {
+  background: #4E4E4E;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 20px 5%;
+}
+
 header {
   position: fixed;
   top: 2%;
@@ -164,7 +159,7 @@ header nav {
   align-items: center;
   align-content: center;
   list-style: none;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(50px);
   border-radius: 20px;
   blur: 15px;
@@ -219,27 +214,39 @@ header .hamburger {
 }
 
 .slider {
-  background-image: url("./assets/images/bg-slider.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 150vh;
+  height: 100vh;
 }
 .slider .info-container {
-  padding-top: 20%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
+  height: 100%;
 }
 .slider .info-container .col-60 {
-  width: 60%;
+  width: 50%;
+  background: url("./assets/images/slider-bg-right.jpg");
+  height: 100%;
 }
 .slider .info-container .col-40 {
-  width: 40%;
+  width: 50%;
+  padding-left: 5%;
+  background: url("./assets/images/slider-bg-left.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 .slider .info-container .text {
   font-size: 350%;
@@ -250,25 +257,28 @@ header .hamburger {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  width: 80%;
+  width: 60%;
+  margin-bottom: 50px;
 }
 .slider .info-container .logo {
+  width: 100%;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 .slider .info-container .btn {
   background: #41976D;
   color: #fff;
   border-radius: 20px;
   font-family: "Lato", sans-serif !important;
-  min-width: 25%;
-  max-width: 40%;
+  min-width: 20%;
+  max-width: 35%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 10px 15px;
+  padding: 15px;
   text-align: center;
   margin: 20px 0;
 }
@@ -349,7 +359,6 @@ header .hamburger {
   align-items: flex-start;
   align-content: flex-start;
   width: 100%;
-  margin-top: -33.5vh;
   overflow: hidden;
 }
 .proposal .column-50 {
@@ -362,7 +371,7 @@ header .hamburger {
 .proposal .column-50 p {
   font-size: 110%;
   margin: 30px 0;
-  width: 55%;
+  width: 90%;
 }
 .proposal .column-50 .pin-container {
   display: flex;
@@ -379,21 +388,12 @@ header .hamburger {
 }
 .proposal .chipset {
   padding: unset;
-  min-height: 60vh;
+  height: 100vh;
   height: auto;
-  background: url("assets/images/chipset.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateX(-80px);
-  margin-top: -10px;
 }
 @media screen and (max-width: 1600px) {
   .proposal {
     margin-top: 0;
-  }
-  .proposal .chipset {
-    background-position: top right;
   }
   .proposal .column-50 {
     padding: 5% 10%;
@@ -422,36 +422,17 @@ header .hamburger {
   .proposal .chipset {
     background-size: contain;
     margin-top: unset;
-    background-position: -30% -100%;
-    transform: translateY(-20%) translateX(-80px);
-  }
-}
-@media screen and (max-width: 800px) {
-  .proposal {
-    margin-top: 0;
-  }
-  .proposal .chipset {
-    transform: translateY(-20%) translateX(-30%);
-  }
-}
-@media screen and (max-width: 600px) {
-  .proposal .chipset {
-    transform: unset;
-    background-size: cover;
-    background-position: 120%;
   }
 }
 
 .services {
-  padding-top: 30%;
-  background: url("assets/images/ourservices-bg.svg");
-  background-position: top;
-  background-repeat: no-repeat;
+  padding: 5% 0;
+  background: linear-gradient(180deg, black 0%, black 30%, #4e4e4e 100%);
 }
 .services .icon-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 5px;
   margin: 30px 0;
 }
 .services .icon-container .icon {
@@ -528,6 +509,15 @@ header .hamburger {
   padding: 10% 0;
   justify-content: center;
   position: relative;
+}
+.development .btn {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  min-width: 10%;
+  padding: 15px;
+  text-transform: uppercase;
 }
 .development .page-bg {
   position: absolute;
@@ -695,7 +685,11 @@ header .hamburger {
 }
 
 .contact {
-  padding: 10% 0;
+  padding: 15% 0 5% 0;
+  background: url("./assets/images/separador.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: top;
 }
 .contact .column-50 p {
   width: 60%;
@@ -726,6 +720,8 @@ header .hamburger {
 .contact .column-50 form .btn {
   min-width: 300px;
   margin: unset;
+  margin-top: 15px;
+  padding: 15px;
 }
 .contact .column-50 .info-container {
   background-color: #41976d;
@@ -751,23 +747,10 @@ header .hamburger {
 .contact .column-50 .info-container .logo {
   width: 30%;
 }
-.contact .column-50 .info-container .details {
-  width: 70%;
-  text-align: right;
-}
-.contact .column-50 .info-container .details img {
-  max-width: 50%;
-}
 @media screen and (max-width: 1600px) {
   .contact .column-50 .info-container .logo {
     width: 40%;
     margin-top: 10px;
-  }
-  .contact .column-50 .info-container .details {
-    width: 60%;
-  }
-  .contact .column-50 .info-container .details img {
-    max-width: 80%;
   }
 }
 .contact .column-50 .info-container .data {
@@ -788,14 +771,6 @@ header .hamburger {
 @media screen and (max-width: 800px) {
   .contact .column-50 .info-container .data {
     margin-top: 20px;
-  }
-}
-.contact .column-50 .info-container .points {
-  width: 10%;
-}
-@media screen and (max-width: 800px) {
-  .contact .column-50 .info-container .points {
-    display: none;
   }
 }
 .contact .column-50 .info-container ul {
@@ -824,16 +799,10 @@ header .hamburger {
   align-items: center;
   align-content: center;
 }
-.contact .column-50 .info-container ul li:first-of-type {
-  margin: 5px 0 25px 0;
-}
 @media screen and (max-width: 800px) {
   .contact .column-50 .info-container ul li {
     margin: 10px 0;
     font-size: 100%;
-  }
-  .contact .column-50 .info-container ul li:first-of-type {
-    margin: 10px 0;
   }
 }
 .contact .column-50 .info-container ul li img {

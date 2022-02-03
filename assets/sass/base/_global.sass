@@ -15,15 +15,7 @@ body
 	+flexbox(row,wrap,space-between,flex-start,flex-start)
 	&.full
 		padding: unset
-		&.work-bg
-			background: url('assets/images/work-bg.svg')
-			background-repeat: no-repeat
-			background-position: 100% -400%
-			padding: 2% 0
-			@media screen and (max-width: $break-xxl)
-				background-position: 140% -10%
-			@media screen and (max-width: $break-md)
-				background: unset
+	
 .column-50
 	width: 50%
 	padding: 0 5%
@@ -71,3 +63,7 @@ section
 	transition: all 0.5s ease-in-out
 	filter: blur(5px)
 
+footer
+	background: #4E4E4E
+	+flexbox(row,wrap,flex-start,center,center)
+	padding: 20px 5%

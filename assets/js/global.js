@@ -129,7 +129,7 @@ $(document).ready(function () {
          breakpoint: 800,
          settings: {
            slidesToShow: 1,
-           arrows: true,
+           arrows: false,
            dots: true,
          }
        },
@@ -137,7 +137,7 @@ $(document).ready(function () {
          breakpoint: 450,
          settings: {
            slidesToShow: 1,
-           arrows: true,
+           arrows: false,
            dots: true,
          }
        }
