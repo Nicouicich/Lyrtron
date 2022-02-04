@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyrtron</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+  <script src="assets/js/jquery-latest.js"></script>
+  <script src="assets/slick/slick.js"></script>
+
+  <script src="assets/js/global.js"></script>
+</head>
+
+<body>
+  <!-- ------------------------------- Header -------------------------------- -->
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo.svg" />
+    </div>
+    <div class='hamburger'>
+       <img src="assets/images/hamburger.svg" />
+    </div>
+    <nav>
+      <li>Visión</li>
+      <li>Servicios</li>
+      <li>Proyectos</li>
+      <li>Partners</li>
+      <li>Contacto</li>
+      <li>ES</li>
+    </nav>
+  </header>
+  <section class="slider">
+    <div class="info-container">
+      <div class="col-40">
+        <h1 class="text">INGENIERÍA ELECTRÓNICA DE PRECISIÓN</h1>
+        <div class="logo">
+          <img src="assets/images/logo.svg" />
+        </div>
+        <div class="btn">Conocenos</div>
+      </div>
+      <div class="col-60">
+      </div>
+       
+    </div>
+  </section>
+  <!-- ------------------------------ Proposal ------------------------------- -->
+  <section class="proposal">
+    <div class="contenedor full">
+      <div class="column-50 chipset">
+        <img src='assets/images/proposal-left.png' />
+      </div>
+      <div class="column-50">
+        <h1>Nuestra Propuesta</h1>
+        <p>
+          Ofrecemos capacidad de diseño, modelado, simulación y construcción de prototipos de
+validación en cualquier etapa del desarrollo de un producto o de una idea de base electrónica,
+desde la concepción de la arquitectura hasta la implementación completa de un sistema.
+        </p>
+        <p>
+          Cooperamos con empresas de tecnología poniendo a su disposición recursos altamente
+capacitados resultando en una complementación flexible, que refuerza la capacidad de
+producción con menores costos fijos de recursos humanos y que acorta el ciclo de desarrollo.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------------ Services ------------------------------- -->
+  <section class="services">
+    <div class="contenedor full">
+      <div class="column-50">
+        <h1>Servicios</h1>
+        <p>
+          Ofrecemos servicios de diseño y desarrollo de hardware y firmware electrónico específico por
+pedido, como así también servicios de medición, prueba y validación a medida del cliente.
+Entre las competencias en desarrollo se pueden mencionar programación de lógica integrada
+(FPGA, CPLD), microcontroladores, DSP, comunicaciones por cable (RS232 / 485, USB, ethernet,
+PLC) por fibra óptica, o por RF (WiFi, ZBee, Bluetooth, celular), diseño digital, diseño analógico,
+adquisición y tratamiento de datos, diseño de sistema de potencia (fuentes conmutadas,
+inversores, inyección de energía a red), diseño y simulación de componentes magnéticos, control
+industrial, control digital avanzado, control no lineal de procesos, sensorización remota (IoT),
+diseño de PCB's, modelización de procesos dinámicos y simulación de sistemas electrónicos por
+mencionar algunas.
+        </p>
+        <div class="icon-container">
+          <div class="icon">
+            <div class="icon-image">
+              <img src="assets/images/service1.svg" alt="Power Electronics" />
+            </div>
+            <h3>Electrónica de Potencia</h3>
+          </div>
+          <div class="icon">
+            <div class="icon-image">
+              <img src="assets/images/service2.svg" alt="Hardware Design" />
+            </div>
+            <h3>Diseño de Hardware</h3>
+          </div>
+          <div class="icon">
+            <div class="icon-image">
+              <img src="assets/images/service3.svg" alt="Control Systems" />
+            </div>
+            <h3>Sistemas de Control</h3>
+          </div>
+          <div class="icon">
+            <div class="icon-image">
+              <img src="assets/images/service4.svg" alt="Special Proyects" />
+            </div>
+            <h3>Proyectos Especiales</h3>
+          </div>
+        </div>
+      </div>
+      <div class="column-50 servicios-grupo">
+        <img src="assets/images/servicios.png" />
+      </div>
+    </div>
+   
+  </section>
+  <!-- ----------------------------- Development ----------------------------- -->
+  <section class="development">
+     
+      <div class="btn">Trabajá con Nosotros</div>
+    
+    <div class="page-bg"></div>
+    <h1>Desarrollos Destacados</h1>
+    <div class="slider-dev">
+      <div class="slide">
+        <h3>Sistema de Voto Electrónico</h3>
+        <img src="assets/images/carrousel/electronic1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(1)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Medidor de Energía Eléctrica con Lectura Remota</h3>
+        <img src="assets/images/carrousel/electric1.jpeg" alt="" />
+        <div class="btn" onclick="openPopup(2)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Intercomunicador de Redes</h3>
+        <img src="assets/images/carrousel/network1.jpeg" alt="" />
+        <div class="btn" onclick="openPopup(3)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Amplificador de Corriente Conmutado para Aplicaciones de Física de Partículas</h3>
+        <img src="assets/images/carrousel/switching1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(4)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Convertidores de Potencia para Generación de Plasma</h3>
+        <img src="assets/images/carrousel/power1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(5)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Amplificador de RF de Potencia Compacto</h3>
+        <img src="assets/images/carrousel/compact1.jpeg" alt="" />
+        <div class="btn" onclick="openPopup(6)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Microinversores para Paneles Solares Fotovoltaicos</h3>
+        <img src="assets/images/carrousel/micro1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(7)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Sensores de Nivel</h3>
+        <img src="assets/images/carrousel/level1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(8)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Fuentes de Protección Catódica</h3>
+        <img src="assets/images/carrousel/cathodic1.JPG" alt="" />
+        <div class="btn" onclick="openPopup(9)">Learn More</div>
+      </div>
+      <div class="slide">
+        <h3>Controladores Inteligentes para Luminarias</h3>
+        <img src="assets/images/carrousel/intelligent1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(10)">Learn More</div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------ Partners and clients ------------------------- -->
+  <section class="partners">
+    <div class="title-bg">
+      <h1>Partners y Clientes</h1>
+    </div>
+    <div class="partners-3">
+      <img src="assets/images/partners/semitech.png" alt="" />
+      <img src="assets/images/partners/grupo-msa.png" alt="" />
+      <img src="assets/images/partners/deitres.png" alt="" />
+    </div>
+    <div class="partners-4">
+      <img src="assets/images/partners/ues.png" alt="" />
+      <img src="assets/images/partners/invap.png" alt="" />
+      <img src="assets/images/partners/advanced-energy.png" alt="" />
+      <img src="assets/images/partners/ampt.png" alt="" />
+    </div>
+    <div class="partners-3">
+      <img src="assets/images/partners/petra-systems.png" alt="" />
+      <img src="assets/images/partners/ansys.png" alt="" />
+      <img src="assets/images/partners/esss.png" alt="" />
+    </div>
+    <div class="partners-4">
+      <img src="assets/images/partners/nims.png" alt="" />
+      <img src="assets/images/partners/colorado-state.png" alt="" />
+      <img src="assets/images/partners/gsatcom.png" alt="" />
+      <img src="assets/images/partners/wallbox.png" alt="" />
+    </div>
+    <div class="partners-3">
+      <img src="assets/images/partners/banpu.png" alt="" />
+      <img src="assets/images/partners/xuv-lasers.png" alt="" />
+      <img src="assets/images/partners/satcon.png" alt="" />
+    </div>
+  </section>
+  <div class='separador'></div>
+  <!-- ----------------------------- Contact us ------------------------------ -->
+  <section class="contact">
+    <div class="contenedor full">
+      <div class="column-50">
+        <h1>Contáctanos</h1>
+        <p>
+          Escribinos si querés ponerte en contacto con nosotros, trabajar con Lyrtron o si necesitás
+información adicional sobre nuestra empresa.
+        </p>
+        <form>
+          <input type="text" placeholder="Escribe tu nombre o empresa" />
+          <input type="email" placeholder="Dirección de mail válida" />
+          <textarea placeholder="Escribe tu mensaje..." rows="10"></textarea>
+          <div class='btn'>Enviar mensaje</div>
+        </form>
+      </div>
+      <div class="column-50">
+        <div class="info-container">
+          <div class="logo">
+            <img src="assets/images/logo.svg" />
+          </div>
+          
+          <div class="data">
+            
+            <ul>
+              <li>
+                <img src="assets/images/email.svg" alt="address" /><span>sec@lyrtron.com.ar</span>
+              </li>
+              <li>
+                <img src="assets/images/phone.svg" alt="address" /><span>+54 9 223 4742929</span>
+              </li>
+              <li>
+                <img src="assets/images/location.svg" alt="address" /><span>San Martin 5391 Mar del Plata CP 7600.
+                  Buenos Aires,
+                  Argentina</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6552222901673!2d-57.57713448416626!3d-37.98517475164508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94745c84933%3A0x94ab6c85aaf8ccb!2sSan%20Mart%C3%ADn%205391%2C%20B7604BVG%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1635113485936!5m2!1ses-419!2sar"
+          height="250" style="border: 0; margin-top: 20px; border-radius: 20px" allowfullscreen=""
+          loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class='logo'>
+       <img src="assets/images/logo.svg" />
+    </div>
+  </footer>
+  <!-- -------------------------------- Popup -------------------------------- -->
+  <div class="popup">
+    <div class="popup-container">
+      <div class="column-50">
+        <h1 id="title"></h1>
+        <p id="description"></p>
+      </div>
+      <div class="column-50 images">
+        <img src="#" id="image1" />
+        <img src="#" id="image2" />
+        <img src="#" id="image3" />
+        <img src="#" id="image4" />
+      </div>
+      <div class="close">X</div>
+      <div class="logo">
+        <img src="assets/images/logo.svg" />
+      </div>
+    </div>
+  </div>
+ 
+</body>
+
+</html>
