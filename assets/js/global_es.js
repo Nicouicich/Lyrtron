@@ -1,9 +1,9 @@
 const info = [
   {
     id: 1,
-    title: "Electronic Vote System",
+    title: "Sistema de Voto Electrónico",
     description:
-      "Design and development of a dedicated computing hardware with built-in digital security and no internal storage, aimed to vote casting. Featuring more than 20 hours autonomy based on the use of Li-Ion internal batteries and with an operating system downloadable from CD/DVD, the unit includes a 24” touchscreen monitor, thermal printer and an RFID read-write unit.",
+      "Diseño y desarrollo de hardware de una computadora dedicada con características intrínsecas de seguridad y sin disco de almacenamiento destinada a la emisión de voto con boleta única. Con 20 horas de autonomía sustentadas en baterías de litio y con sistema operativo descargable desde CD/DVD, el sistema incluye monitor táctil de 24”, impresora térmica y sistema de lectura-escritura de chips RFID.",
     image1: "assets/images/carrousel/electronic1.jpg",
     image2: "assets/images/carrousel/electronic2.jpg",
     image3: "assets/images/carrousel/electronic3.jpg",
@@ -11,9 +11,9 @@ const info = [
   },
   {
     id: 2,
-    title: "Electric Energy Meter with Remote Reading",
+    title: "Medidor de Energía Eléctrica con Lectura Remota",
     description:
-      "Development of a single-phase electric energy meter for up to 60 A applications, with communication capability in the 902…915MHz ISM band. With accuracy exceeding Class I, it features tamper detection and fraud deterring. Including a remotely controlled built-in breaker, it allows measuring bidirectional energy flow, being also suitable for smart cities.",
+      "Desarrollo de medidor de energía eléctrica monofásico para aplicaciones de hasta 60A, con capacidad de comunicación en la banda ISM 902...915MHz. Con exactitud superior a Clase I, posee detección de vandalismo y de intento de adulteración. Incluyendo capacidad interna de corte del suministro por comando desde el operador remoto, permite asimismo medir inyección bidireccional de energía, siendo por tanto tambien apto para el uso en prosumidores en redes eléctricas inteligentes.",
     image1: "assets/images/carrousel/electric1.jpeg",
     image2: "assets/images/carrousel/electric2.jpeg",
     image3: "assets/images/carrousel/electric3.jpeg",
@@ -21,9 +21,9 @@ const info = [
   },
   {
     id: 3,
-    title: "Network Communicator",
+    title: "Intercomunicador de Redes",
     description:
-      "Network communicator with a built-in GPS and featuring PoE or AC supply, the Network Communicator is a subsystem aimed at channeling data flow through PLC (power-line carrier), ZigBee, WiFi IEEE802.11s, cellular and Ethernet.",
+      "Con un GPS incorporado y suministro de energía a través de la entrada Ethernet o bien por medio de una fuente externa, el intercomunicador de redes es un subsistema orientado a la transferencia de datos por PLC (portadora sobre la red eléctrica), vía ZigBee, por WiFi, red celular de datos o vía Ethernet.",
     image1: "assets/images/carrousel/network1.jpeg",
     image2: "assets/images/carrousel/network2.jpeg",
     image3: "assets/images/carrousel/network3.jpeg",
@@ -31,9 +31,9 @@ const info = [
   },
   {
     id: 4,
-    title: "Switching Current Amplifier for Particle Physics Applications",
+    title: "Amplificador de Corriente Conmutado para Aplicaciones de Física de Partículas",
     description:
-      "Class D current amplifier used as active filter to reduce low-frequency ripple in high-power controlled rectifiers for synchrotron-like particle accelerators.",
+      "Amplificador de corriente clase D compacto utilizado como filtro activo para la reducción de ripple en rectificadores controlados utilizados en aceleradores de partículas tipo sincrotrón.",
     image1: "assets/images/carrousel/switching1.jpg",
     image2: "assets/images/carrousel/switching2.jpg",
     image3: "assets/images/carrousel/switching3.jpg",
@@ -41,9 +41,9 @@ const info = [
   },
   {
     id: 5,
-    title: "Power converter plasma generation",
+    title: "Convertidores de Potencia para Generación de Plasma",
     description:
-      "High-frequency (2MHz), 6kW inverter based on SiC MOS technology for inductive plasma generation, embedding the controller for the nonlinear load into a Xilinx FPGA. Aimed for silicon wafer processing and toxic gas abatement in the semiconductor industry.",
+      "Inversor de alta frecuencia (2MHz) de 6kW con tecnología SiC para producción de plasma inductivo, con sistema de control para la carga no-lineal embebido en una FPGA Xilinx. Destinado a procesamiento de wafers de silicio y a la neutralización de gases tóxicos en la industria del semiconductor.",
     image1: "assets/images/carrousel/power1.jpg",
     image2: "assets/images/carrousel/power2.jpg",
     image3: "assets/images/carrousel/power3.jpg",
@@ -51,9 +51,9 @@ const info = [
   },
   {
     id: 6,
-    title: "Compact RF Power Amplifier",
+    title: "Amplificador de RF de Potencia Compacto",
     description:
-      "Development of a compact 3kW RF power amplifier for the 13.56MHz ISM band using Gallium-Nitride wide bandgap semiconductor technology, with phase-shift modulation. Peak efficiency exceeds 93%.",
+      "Desarrollo de un amplificador de RF de 3kW compacto para la banda ISM 13.56MHz utilizando tecnología de semiconductores wide bandgap tipo GaN, con modulación por desplazamiento de fase. Eficiencia pico superior a 93%.",
     image1: "assets/images/carrousel/compact1.jpeg",
     image2: "assets/images/carrousel/compact2.jpeg",
     image3: "assets/images/carrousel/compact3.jpeg",
@@ -61,9 +61,9 @@ const info = [
   },
   {
     id: 7,
-    title: "Microinverters for Solar Photovoltaic Modules",
+    title: "Microinversores para Paneles Solares Fotovoltaicos",
     description:
-      "Development of grid-tie microinverters for solar applications with direct energy injection to the grid (no batteries). With CEC efficiency exceeding 96% and 250W and 500W (two models) maximum power, it optimizes the energy extraction on single solar panels, allowing for progressive scaling up based on installation possibilities. A PLC (power-line carrier) or ZigBee communication system allows both, accessing the internal status in real time as well as acquiring the injected power, which is internally measured with a built-in Class I certified energy meter.",
+      "Desarrollo de microinversores para aplicaciones solares con inyección de energía directa a la red eléctrica (sin baterías). Con una eficiencia superior a 96% CEC y potencia máxima de 250W y 500W (dos versiones), permite optimizar la extracción de energía por cada panel solar y escalar una instalación en la medida de los recursos disponibles. Un sistema de comunicación por PLC (power-line carrier) o ZigBee permite adquirir en tiempo real el estado operativo de la unidad asi como la potencia inyectada, calculada internamente con un medidor Clase I certificado embebido en la unidad.",
     image1: "assets/images/carrousel/micro1.jpg",
     image2: "assets/images/carrousel/micro2.jpg",
     image3: "assets/images/carrousel/micro3.jpg",
@@ -71,9 +71,9 @@ const info = [
   },
   {
     id: 8,
-    title: "Level Sensors",
+    title: "Sensores de Nivel",
     description:
-      "Non-contact ultrasound fill-level transducers for solids and liquids in tanks and containers, developed to periodically monitor this magnitude through the cellular network.",
+      "Medidores ultrasónicos de nivel de llenado sin contacto para sólidos y líquidos en cisternas, tanques y contenedores, desarrollados para reportar periódicamente esta variable a través de la red celular.",
     image1: "assets/images/carrousel/level1.jpg",
     image2: "assets/images/carrousel/level2.jpg",
     image3: "assets/images/carrousel/level3.jpg",
@@ -81,9 +81,9 @@ const info = [
   },
   {
     id: 9,
-    title: "Cathodic Protection Power Supplies",
+    title: "Fuentes de Protección Catódica",
     description:
-      "Development of compact 2kW power converters aimed to protect underground metallic pipelines, by injecting a current controlled by the local potential related to a reference electrode. With satellite synchronization and communication and typically used in oil and gas pipelines, it can be remotely programmed and polled for integrity statistics.",
+      "Desarrollo de convertidores de 2kW compactos para protección de tuberías metálicas soterradas, por inyección de corriente controlada en función del potencial local respecto de electrodos de referencia. Con sincronización y comunicación satelital y típicamente empleada en aplicaciones de transporte de oil & gas, es capaz de programarse en forma remota y de enviar datos periódicamente para estadística asociada con la integridad de la tubería.",
     image1: "assets/images/carrousel/cathodic1.JPG",
     image2: "assets/images/carrousel/cathodic2.jpg",
     image3: "assets/images/carrousel/cathodic3.jpg",
@@ -91,9 +91,9 @@ const info = [
   },
   {
     id: 10,
-    title: "Intelligent Controllers for Street Lighting",
+    title: "Controladores Inteligentes para Luminarias",
     description:
-      "Devices developed as advanced photocontrollers for street, road and highway luminaires, featuring cellular or WiFi communication to a central management system. It is intended to be plugged into a standard ANSI C136 or NEMA socket. Aimed for smart city applications, it controls the light intensity by means of any of the standard interfaces (0/10V, PWM, DALI), based on a remotely reprogrammable timetable, contributing to obtain large electric energy savings and to extend the lamp lifetime as well. A Class I energy meter measures the energy drawn, reporting luminaire failures.",
+      "Dispositivos desarrollados como fotocontroles avanzados para luminarias urbanas, de calles, rutas y autopistas con capacidad de comunicación por red celular o WiFi con un sistema de gestión central. Se inserta en el zócalo normalizado ANSI C136 o NEMA. Orientado a aplicaciones en ciudades inteligentes, es capaz de gestionar la intensidad de la luminaria por medio de cualquiera de las interfaces de atenuación comerciales (0/10V, PWM, DALI), en base a una tabla horaria reprogramable en forma remota, contribuyendo enormemente al ahorro de energía eléctrica sin pérdida de funcionalidad y a la extensión de la vida útil de la lámpara. Un medidor de potencia Clase I monitorea el consumo y reporta los casos de falla de la luminaria.",
     image1: "assets/images/carrousel/intelligent1.jpg",
     image2: "assets/images/carrousel/intelligent2.jpg",
     image3: "assets/images/carrousel/intelligent3.jpg",
