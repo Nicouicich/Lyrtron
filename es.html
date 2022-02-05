@@ -16,28 +16,28 @@
   <link rel="stylesheet" href="assets/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
-  <script src="assets/js/jquery-latest.js"></script>
-  <script src="assets/slick/slick.js"></script>
+  <script src="./assets/js/jquery-latest.js"></script>
+  <script src="./assets/slick/slick.js"></script>
 
-  <script src="assets/js/global.js"></script>
+  <script src="./assets/js/global_es.js"></script>
 </head>
 
 <body>
   <!-- ------------------------------- Header -------------------------------- -->
   <header>
     <div class="logo">
-      <img src="assets/images/logo.svg" />
+       <a href="es.html"><img src="assets/images/logo.svg" /></a>
     </div>
     <div class='hamburger'>
       <img src="assets/images/hamburger.svg" />
     </div>
     <nav>
-      <li><a href="#vision">Visión</a> </li>
-      <li><a href="#service">Servicios</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#partner">Partners</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="./index.html">ES</a></li>
+      <li><a class='anchor' href="#vision">Visión</a> </li>
+      <li><a class='anchor' href="#service">Servicios</a></li>
+      <li><a class='anchor' href="#projects">Proyectos</a></li>
+      <li><a class='anchor' href="#partner">Partners</a></li>
+      <li><a class='anchor' href="#contact">Contacto</a></li>
+      <li><a href="index.html">ES</a></li>
     </nav>
   </header>
   <section class="slider">
@@ -47,7 +47,7 @@
         <div class="logo">
           <img src="assets/images/logo.svg" />
         </div>
-        <div class="btn">Conocenos</div>
+        <a class="btn anchor" href="#vision">Conocenos</a>
       </div>
       <div class="col-60">
       </div>
@@ -128,10 +128,10 @@
   <!-- ----------------------------- Development ----------------------------- -->
   <section class="development">
 
-    <div class="btn">Trabajá con Nosotros</div>
+    <a class="btn anchor" href="#contact">Trabajá con Nosotros</a>
 
     <div class="page-bg"></div>
-    <h1 id="project">Desarrollos Destacados</h1>
+    <h1 id="projects">Desarrollos Destacados</h1>
     <div class="slider-dev">
       <div class="slide">
         <h3>Sistema de Voto Electrónico</h3>
@@ -220,10 +220,10 @@
   </section>
   <div class='separador'></div>
   <!-- ----------------------------- Contact us ------------------------------ -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contenedor full">
       <div class="column-50">
-        <h1 id="contact">Contactanos</h1>
+        <h1>Contactanos</h1>
         <p>
           Escribinos si querés ponerte en contacto con nosotros, trabajar con Lyrtron o si necesitás
           información adicional sobre nuestra empresa.
@@ -251,9 +251,9 @@
                 <img src="assets/images/phone.svg" alt="address" /><span>+54 9 223 4742929</span>
               </li>
               <li>
-                <img src="assets/images/location.svg" alt="address" /><span>San Martin 5391 Mar del Plata CP 7600.
+                <img src="assets/images/location.svg" alt="address" /><span>San Martin 5391 Mar del Plata <span style="font-weight: 300 !important;padding-left: 0">CP 7600.
                   Buenos Aires,
-                  Argentina</span>
+                  Argentina</span></span>
               </li>
             </ul>
           </div>
@@ -283,7 +283,7 @@
         <img src="#" id="image3" />
         <img src="#" id="image4" />
       </div>
-      <div class="close">X</div>
+      <div class="close"><img src='assets/images/popup-arrowback.svg' /></div>
       <div class="logo">
         <img src="assets/images/logo.svg" />
       </div>

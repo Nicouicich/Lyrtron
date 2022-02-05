@@ -71,6 +71,7 @@ body {
   color: #fff;
   border-radius: 20px;
   font-family: "Lato", sans-serif !important;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -167,6 +168,10 @@ header nav {
   width: 30%;
   padding: 10px 25px;
 }
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+}
 header .logo {
   width: 10%;
 }
@@ -184,7 +189,7 @@ header .hamburger {
     width: 20%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   header .hamburger {
     display: block;
     cursor: pointer;
@@ -210,6 +215,10 @@ header .hamburger {
     width: 100%;
     text-align: right;
     margin: 10px 0;
+  }
+  header nav.active li a {
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -260,6 +269,11 @@ header .hamburger {
   width: 60%;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 600px) {
+  .slider .info-container .text {
+    overflow: unset;
+  }
+}
 .slider .info-container .logo {
   width: 100%;
   margin-top: 25px;
@@ -300,22 +314,18 @@ header .hamburger {
     height: 100vh;
   }
   .slider .info-container .col-40 .text {
-    font-size: 250%;
+    font-size: 300% !important;
+    width: 80% !important;
   }
   .slider .info-container .col-40 .btn {
     min-width: 25%;
   }
 }
 @media screen and (max-width: 800px) {
-  .slider {
-    background-size: cover;
-    background-image: url("./assets/images/slider-mobile-bg.png");
-    background-position: top !important;
-  }
   .slider .info-container .col-40 {
     padding-top: 5%;
     padding-left: 5%;
-    width: 100%;
+    width: 70%;
   }
   .slider .info-container .col-40 .text {
     font-size: 400%;
@@ -323,8 +333,8 @@ header .hamburger {
   .slider .info-container .col-40 .btn {
     max-width: 50%;
   }
-  .slider .info-containr .col-60 {
-    display: none;
+  .slider .info-container .col-60 {
+    width: 30%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -368,10 +378,20 @@ header .hamburger {
 .proposal .column-50 h1 {
   font-size: 300%;
 }
+@media screen and (max-width: 1100px) {
+  .proposal .column-50 h1 {
+    font-size: 200% !important;
+  }
+}
 .proposal .column-50 p {
   font-size: 110%;
   margin: 30px 0;
   width: 90%;
+}
+@media screen and (max-width: 1100px) {
+  .proposal .column-50 p {
+    font-size: 100% !important;
+  }
 }
 .proposal .column-50 .pin-container {
   display: flex;
@@ -395,33 +415,16 @@ header .hamburger {
   .proposal {
     margin-top: 0;
   }
-  .proposal .column-50 {
-    padding: 5% 10%;
-  }
   .proposal .column-50 p {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
-  .proposal {
-    background: unset;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .proposal {
-    margin-top: -25vh;
-  }
-  .proposal .column-50 {
-    width: 100%;
-    padding: 0 5%;
-    text-align: left;
-  }
-  .proposal .column-50 p {
-    width: 100%;
-  }
+@media screen and (max-width: 800px) {
   .proposal .chipset {
-    background-size: contain;
-    margin-top: unset;
+    display: none;
+  }
+  .proposal .column-50 {
+    width: 100%;
   }
 }
 
@@ -460,6 +463,11 @@ header .hamburger {
   width: 100%;
   line-height: 1.5;
 }
+@media screen and (max-width: 1100px) {
+  .services .column-50 p {
+    font-size: 100%;
+  }
+}
 .services .servicios-grupo img {
   max-width: 100%;
 }
@@ -474,23 +482,23 @@ header .hamburger {
     background-size: contain;
   }
 }
-@media screen and (max-width: 1100px) {
-  .services {
-    background: url("assets/images/separator.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-  .services .contenedor {
-    padding-top: 10%;
-  }
-  .services .contenedor .column-50 {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 800px) {
   .services .contenedor {
     padding: 0 5%;
     padding-top: 20%;
+  }
+  .services .contenedor .column-50 {
+    width: 100%;
+  }
+  .services .servicios-grupo {
+    display: none;
+  }
+  .services .icon-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .services .icon-container .icon h3 {
+    width: 100%;
+    font-size: 90%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -514,10 +522,15 @@ header .hamburger {
   z-index: 9999;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 45%;
   min-width: 10%;
   padding: 15px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 800px) {
+  .development .btn {
+    left: 35%;
+  }
 }
 .development .page-bg {
   position: absolute;
@@ -558,6 +571,19 @@ header .hamburger {
   height: 350px;
   object-fit: cover;
 }
+@media screen and (max-width: 800px) {
+  .development .slide img {
+    width: 398px;
+    height: 335px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .development .slide img {
+    width: 200px;
+    height: 335px;
+  }
+}
 .development .slide h3 {
   margin: 0 auto;
   width: 90%;
@@ -566,9 +592,23 @@ header .hamburger {
   text-align: center;
   font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+  .development .slide h3 {
+    font-size: 90%;
+  }
+}
 .development .slide .btn {
-  width: 60%;
+  min-width: 30%;
+  max-width: 40%;
   cursor: pointer;
+  position: relative;
+  left: unset;
+  text-transform: unset;
+}
+@media screen and (max-width: 600px) {
+  .development .slide .btn {
+    max-width: 75%;
+  }
 }
 @media screen and (max-width: 600px) {
   .development .slide {
@@ -588,12 +628,15 @@ header .hamburger {
 }
 @media screen and (max-width: 800px) {
   .development h1 {
-    padding-top: 20%;
+    padding-top: 30%;
+  }
+  .development .slide img {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 600px) {
   .development h1 {
-    padding-top: 45%;
+    padding-top: 55%;
   }
 }
 
@@ -641,7 +684,7 @@ header .hamburger {
 }
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 120vh;
+    height: 130vh;
     padding: 5%;
   }
   .partners .title-bg {
@@ -674,7 +717,7 @@ header .hamburger {
 }
 @media screen and (max-width: 600px) {
   .partners {
-    height: 100vh;
+    height: 75vh;
   }
   .partners .title-bg {
     width: 100%;
@@ -691,8 +734,18 @@ header .hamburger {
   background-size: 110%;
   background-position: top;
 }
+@media screen and (max-width: 600px) {
+  .contact {
+    background: none;
+  }
+}
 .contact .column-50 p {
   width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .contact .column-50 p {
+    width: 100%;
+  }
 }
 .contact .column-50 form {
   width: 100%;
@@ -730,8 +783,8 @@ header .hamburger {
   box-shadow: inset 0px 3px 10px 0px rgba(255, 255, 255, 0.4);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 45vh;
-  padding: 5%;
+  height: auto;
+  padding: 5% 25%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -741,7 +794,7 @@ header .hamburger {
 }
 @media screen and (max-width: 800px) {
   .contact .column-50 .info-container {
-    height: 35vh;
+    height: auto;
   }
 }
 .contact .column-50 .info-container .logo {
@@ -753,9 +806,14 @@ header .hamburger {
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 600px) {
+  .contact .column-50 .info-container .logo {
+    width: 70%;
+  }
+}
 .contact .column-50 .info-container .data {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -788,10 +846,16 @@ header .hamburger {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .contact .column-50 .info-container ul {
+    justify-content: center;
+  }
+}
 .contact .column-50 .info-container ul li {
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 120%;
+  max-width: 55%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -805,12 +869,25 @@ header .hamburger {
     font-size: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .contact .column-50 .info-container ul li {
+    width: 100%;
+    max-width: unset;
+  }
+}
 .contact .column-50 .info-container ul li img {
   width: 25px;
 }
 .contact .column-50 .info-container ul li span {
   width: 80%;
   padding-left: 5%;
+}
+@media screen and (max-width: 600px) {
+  .contact .column-50 .info-container ul li span {
+    width: 85%;
+    padding-left: 10px;
+    max-width: unset !important;
+  }
 }
 .contact .column-50 iframe {
   width: 100%;
@@ -836,7 +913,7 @@ header .hamburger {
 .popup {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
   display: flex;
   flex-direction: row;
@@ -844,16 +921,17 @@ header .hamburger {
   justify-content: center;
   align-items: center;
   align-content: center;
+  z-index: 99999;
   display: none;
 }
 .popup .popup-container {
-  width: 70vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
   background: #777777;
   color: #fff;
   border-radius: 20px;
-  padding: 5% 2%;
-  margin: 10% auto 0 auto;
+  padding: 5%;
+  margin: 0 auto 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -862,15 +940,22 @@ header .hamburger {
   align-content: flex-start;
   position: relative;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  overflow: scroll;
+}
+@media screen and (max-width: 1100px) {
+  .popup .popup-container {
+    padding: 10% 5% 10% 5%;
+    justify-content: center;
+  }
 }
 .popup .popup-container .close {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 5%;
+  left: 5%;
   cursor: pointer;
 }
 .popup .popup-container .column-50 {
-  width: 49%;
+  width: 39%;
   padding: 0;
 }
 .popup .popup-container .column-50 h1 {
@@ -878,32 +963,62 @@ header .hamburger {
   font-size: 200%;
 }
 .popup .popup-container .column-50 p {
-  font-size: 90%;
+  padding-top: 50px;
+  font-size: 110%;
   line-height: 2;
   width: 80%;
 }
+@media screen and (max-width: 1100px) {
+  .popup .popup-container .column-50 {
+    width: 100%;
+  }
+}
 .popup .popup-container .column-50:nth-of-type(2) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: unset;
   gap: 20px;
+  width: 60%;
+}
+@media screen and (max-width: 1100px) {
+  .popup .popup-container .column-50:nth-of-type(2) {
+    width: 100%;
+    margin-top: 25px;
+  }
 }
 .popup .popup-container .column-50.images img {
-  width: 100%;
-  height: 100%;
+  width: 470px;
+  height: 365px;
+}
+@media screen and (max-width: 1600px) {
+  .popup .popup-container .column-50.images img {
+    width: 326px;
+    height: 252px;
+  }
 }
 .popup .popup-container .logo {
   position: absolute;
-  bottom: 30px;
+  bottom: 10%;
   left: 3%;
 }
-@media screen and (max-width: 800px) {
-  .popup .popup-container {
-    width: 90vw;
-    margin: 20% auto 0 auto;
+@media screen and (max-width: 1100px) {
+  .popup .popup-container .logo {
+    display: none;
   }
+}
+@media screen and (max-width: 800px) {
   .popup .popup-container .logo {
     left: unset;
     right: 3%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 200% !important;
   }
 }
 
