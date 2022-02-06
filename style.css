@@ -539,7 +539,7 @@ header .hamburger {
   width: 100%;
   height: 50vh;
   top: 0;
-  background: url("assets/images/dev-bg.png");
+  /*background: url("assets/images/dev-bg.png");*/
   background-position: top;
   background-repeat: no-repeat;
   filter: grayscale(100%);
@@ -644,7 +644,8 @@ header .hamburger {
 
 .partners {
   height: 115vh;
-  background: url("assets/images/partners-bg.svg");
+  /*background: url("assets/images/partners-bg.svg");*/
+  background: linear-gradient(#337554, #41976D);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -731,7 +732,7 @@ header .hamburger {
 
 .contact {
   padding: 15% 0 5% 0;
-  background: url("./assets/images/separador.png");
+  /*background: url("./assets/images/separador.png");*/
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: top;
