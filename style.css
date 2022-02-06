@@ -242,6 +242,7 @@ header .hamburger {
   width: 50%;
   background: url("./assets/images/slider-bg-right.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 .slider .info-container .col-40 {
