@@ -142,6 +142,7 @@ header {
   padding: 10px 25px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); /* agrego esto porque el blur sino no aparece en safari */
   border-radius: 40px;
   width: 90%;
   z-index: 99999;
@@ -163,7 +164,6 @@ header nav {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(50px);
   border-radius: 20px;
-  blur: 15px;
   color: #fff;
   width: 30%;
   padding: 10px 25px;
@@ -241,12 +241,13 @@ header .hamburger {
 .slider .info-container .col-60 {
   width: 50%;
   background: url("./assets/images/slider-bg-right.jpg");
+  background-repeat: no-repeat;
   height: 100%;
 }
 .slider .info-container .col-40 {
   width: 50%;
   padding-left: 5%;
-  background: url("./assets/images/slider-bg-left.jpg");
+  background: url("./assets/images/slider-bg-left2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
