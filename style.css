@@ -276,7 +276,7 @@ header .hamburger {
   align-content: center;
 }
 .slider .info-container .text {
-  font-size: 350%;
+  font-size: 330%;
   line-height: 1.2;
   color: #fff;
   text-transform: uppercase;
@@ -284,7 +284,7 @@ header .hamburger {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  width: 60%;
+  width: 70%;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 600px) {
@@ -715,7 +715,7 @@ header .hamburger {
 } */
 
 .partners {
-  height: 140vh;
+  height: 120vh;
   /*background: url("assets/images/partners-bg.svg");*/
   background: linear-gradient(#337554, #41976d);
   background-position: center;
@@ -760,13 +760,13 @@ header .hamburger {
 
 @media screen and (max-width: 2000px) {
   .partners {
-    height: 110vh;
+    height: 112vh;
     padding: 5%;
   }
 }
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 105vh;
+    height: 108vh;
     padding: 5%;
   }
   .partners .title-bg {
