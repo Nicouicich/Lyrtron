@@ -666,7 +666,7 @@ header .hamburger {
 } */
 
 .partners {
-  height: 115vh;
+  height: 130vh;
   /*background: url("assets/images/partners-bg.svg");*/
   background: linear-gradient(#337554, #41976D);
   background-position: center;
@@ -746,6 +746,8 @@ header .hamburger {
   .partners .partners-4 img {
     max-width: 15%;
   }
+
+
 }
 @media screen and (max-width: 600px) {
   .partners {
