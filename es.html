@@ -16,17 +16,17 @@
   <link rel="stylesheet" href="assets/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
-  <script src="./assets/js/jquery-latest.js"></script>
-  <script src="./assets/slick/slick.js"></script>
+  <script src="assets/js/jquery-latest.js"></script>
+  <script src="assets/slick/slick.js"></script>
 
-  <script src="./assets/js/global_es.js"></script>
+  <script src="assets/js/global.js"></script>
 </head>
 
 <body>
   <!-- ------------------------------- Header -------------------------------- -->
   <header>
     <div class="logo">
-       <a href="es.html"><img src="assets/images/logo.svg" /></a>
+      <a href="index.html"><img src="assets/images/logo.svg" /></a>
     </div>
     <div class='hamburger'>
       <img src="assets/images/hamburger.svg" />
@@ -37,7 +37,8 @@
       <li><a class='anchor' href="#projects">Proyectos</a></li>
       <li><a class='anchor' href="#partner">Partners</a></li>
       <li><a class='anchor' href="#contact">Contacto</a></li>
-      <li><a href="index.html">ES</a></li>
+      <li><a href="es.html">EN</a></li>
+
     </nav>
   </header>
   <section class="slider">
@@ -47,7 +48,7 @@
         <div class="logo">
           <img src="assets/images/logo.svg" />
         </div>
-        <a class="btn anchor" href="#vision">Conocenos</a>
+        <a href="#vision" class="btn anchor">Conocenos</a>
       </div>
       <div class="col-60">
       </div>
@@ -55,7 +56,7 @@
     </div>
   </section>
   <!-- ------------------------------ Proposal ------------------------------- -->
-  <section class="proposal">
+  <section class="proposal" id="vision">
     <div class="contenedor full">
       <div class="column-50 chipset">
         <img src='assets/images/proposal-left.png' />
@@ -93,7 +94,7 @@
           mencionar algunas.
         </p>
         <div class="icon-container">
-          <div class="icon">
+          <div class="icon esp">
             <div class="icon-image">
               <img src="assets/images/service1.svg" alt="Power Electronics" />
             </div>
@@ -134,19 +135,39 @@
     <h1 id="projects">Desarrollos Destacados</h1>
     <div class="slider-dev">
       <div class="slide">
-        <h3>Sistema de Voto Electrónico</h3>
-        <img src="assets/images/carrousel/electronic1.jpg" alt="" />
-        <div class="btn" onclick="openPopup(1)">Más información</div>
+        <h3>Amplificador de RF de Potencia Compacto</h3>
+        <img src="assets/images/carrousel/compact1.jpeg" alt="" />
+        <div class="btn" onclick="openPopup(6)">Más información</div>
       </div>
       <div class="slide">
-        <h3>Medidor de Energía Eléctrica con Lectura Remota</h3>
-        <img src="assets/images/carrousel/electric1.jpeg" alt="" />
-        <div class="btn" onclick="openPopup(2)">Más información</div>
+        <h3>Controladores Inteligentes para Luminarias</h3>
+        <img src="assets/images/carrousel/intelligent1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(10)">Más información</div>
+      </div>
+      <div class="slide">
+        <h3>Sensores de Nivel</h3>
+        <img src="assets/images/carrousel/level1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(8)">Más información</div>
+      </div>
+      <div class="slide">
+        <h3>Microinversores para Paneles Solares Fotovoltaicos</h3>
+        <img src="assets/images/carrousel/micro1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(7)">Más información</div>
       </div>
       <div class="slide">
         <h3>Intercomunicador de Redes</h3>
         <img src="assets/images/carrousel/network1.jpeg" alt="" />
         <div class="btn" onclick="openPopup(3)">Más información</div>
+      </div>
+      <div class="slide">
+        <h3>Sistema de Voto Electrónico</h3>
+        <img src="assets/images/carrousel/electronic1.jpg" alt="" />
+        <div class="btn" onclick="openPopup(1)">Más información</div>
+      </div>
+      <div class="slide">
+        <h3>Fuentes de Protección Catódica</h3>
+        <img src="assets/images/carrousel/cathodic1.JPG" alt="" />
+        <div class="btn" onclick="openPopup(9)">Más información</div>
       </div>
       <div class="slide">
         <h3>Amplificador de Corriente Conmutado para Aplicaciones de Física de Partículas</h3>
@@ -159,36 +180,17 @@
         <div class="btn" onclick="openPopup(5)">Más información</div>
       </div>
       <div class="slide">
-        <h3>Amplificador de RF de Potencia Compacto</h3>
-        <img src="assets/images/carrousel/compact1.jpeg" alt="" />
-        <div class="btn" onclick="openPopup(6)">Más información</div>
+        <h3>Medidor de Energía Eléctrica con Lectura Remota</h3>
+        <img src="assets/images/carrousel/electric1.jpeg" alt="" />
+        <div class="btn" onclick="openPopup(2)">Más información</div>
       </div>
-      <div class="slide">
-        <h3>Microinversores para Paneles Solares Fotovoltaicos</h3>
-        <img src="assets/images/carrousel/micro1.jpg" alt="" />
-        <div class="btn" onclick="openPopup(7)">Más información</div>
-      </div>
-      <div class="slide">
-        <h3>Sensores de Nivel</h3>
-        <img src="assets/images/carrousel/level1.jpg" alt="" />
-        <div class="btn" onclick="openPopup(8)">Más información</div>
-      </div>
-      <div class="slide">
-        <h3>Fuentes de Protección Catódica</h3>
-        <img src="assets/images/carrousel/cathodic1.JPG" alt="" />
-        <div class="btn" onclick="openPopup(9)">Más información</div>
-      </div>
-      <div class="slide">
-        <h3>Controladores Inteligentes para Luminarias</h3>
-        <img src="assets/images/carrousel/intelligent1.jpg" alt="" />
-        <div class="btn" onclick="openPopup(10)">Más información</div>
-      </div>
+
     </div>
   </section>
   <!-- ------------------------ Partners and clients ------------------------- -->
-  <section class="partners">
+  <section class="partners" id="partner">
     <div class="title-bg">
-      <h1 id="partner">Partners y Clientes</h1>
+      <h1>Partners y Clientes</h1>
     </div>
     <div class="partners-3">
       <img src="assets/images/partners/semitech.png" alt="" />
@@ -229,9 +231,9 @@
           información adicional sobre nuestra empresa.
         </p>
         <form>
-          <input type="text" placeholder="Escribe tu nombre o empresa" />
-          <input type="email" placeholder="Dirección de mail válida" />
-          <textarea placeholder="Escribe tu mensaje..." rows="10"></textarea>
+          <input type="text" placeholder="Enter name or company" />
+          <input type="email" placeholder="Enter a valid email address" />
+          <textarea placeholder="Type your message..." rows="10"></textarea>
           <div class='btn'>Enviar mensaje</div>
         </form>
       </div>
@@ -251,9 +253,10 @@
                 <img src="assets/images/phone.svg" alt="address" /><span>+54 9 223 4742929</span>
               </li>
               <li>
-                <img src="assets/images/location.svg" alt="address" /><span>San Martin 5391 Mar del Plata <span style="font-weight: 300 !important;padding-left: 0">CP 7600.
-                  Buenos Aires,
-                  Argentina</span></span>
+                <img src="assets/images/location.svg" alt="address" /><span>San Martin 5391 Mar del Plata <span
+                    style="font-weight: 300 !important;padding-left: 0">CP 7600.
+                    Buenos Aires,
+                    Argentina</span></span>
               </li>
             </ul>
           </div>
