@@ -715,7 +715,7 @@ header .hamburger {
 } */
 
 .partners {
-  height: 160vh;
+  height: 140vh;
   /*background: url("assets/images/partners-bg.svg");*/
   background: linear-gradient(#337554, #41976d);
   background-position: center;
@@ -760,13 +760,13 @@ header .hamburger {
 
 @media screen and (max-width: 2000px) {
   .partners {
-    height: 135vh;
+    height: 130vh;
     padding: 5%;
   }
 }
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 135vh;
+    height: 130vh;
     padding: 5%;
   }
   .partners .title-bg {
@@ -802,7 +802,7 @@ header .hamburger {
     height: 80vh;
   }
   .partners .title-bg {
-    width: 100%;
+    width: 50%;
   }
   .partners .title-bg h1 {
     font-size: 200%;
