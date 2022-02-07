@@ -539,7 +539,7 @@ header .hamburger {
 }
 @media screen and (max-width: 800px) {
   .development .btn {
-    left: 35%;
+    left: 23%;
   }
 }
 .development .page-bg {
