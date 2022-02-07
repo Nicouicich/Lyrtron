@@ -4,12 +4,19 @@
 /* -------------------------------------------------------------------------- */
 /*                             General Text Styles                            */
 /* -------------------------------------------------------------------------- */
-body, p, span {
-  font-family: "Lato", sans-serif !important;
+body,
+p,
+span {
+  font-family: 'Lato', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -52,17 +59,10 @@ body {
 .column-50 {
   width: 50%;
   padding-right: 5%;
-  padding-left:2%;
+  padding-left: 2%;
 }
 .column-50 h1 {
   font-size: 300%;
-}
-.services-column-50 {
-  padding-left: 14%;
-  padding-right: 6%;
-}
-.services .servicios-grupo img {
-  padding-left:0% !important;
 }
 
 .separator {
@@ -75,10 +75,10 @@ body {
 }
 
 .btn {
-  background: #41976D;
+  background: #41976d;
   color: #fff;
   border-radius: 20px;
-  font-family: "Lato", sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -92,7 +92,7 @@ body {
 }
 .btn:hover {
   background: #fff;
-  color: #41976D;
+  color: #41976d;
   transition: all 0.3s ease-in-out;
 }
 
@@ -132,7 +132,7 @@ section {
 }
 
 footer {
-  background: #4E4E4E;
+  background: #4e4e4e;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -150,7 +150,9 @@ header {
   padding: 10px 25px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px); /* agrego esto porque el blur sino no aparece en safari */
+  -webkit-backdrop-filter: blur(
+    15px
+  ); /* agrego esto porque el blur sino no aparece en safari */
   border-radius: 40px;
   width: 90%;
   z-index: 99999;
@@ -202,7 +204,6 @@ header .hamburger {
   header nav {
     width: 45%;
   }
-
 }
 @media screen and (max-width: 1000px) {
   header .hamburger {
@@ -255,7 +256,7 @@ header .hamburger {
 }
 .slider .info-container .col-60 {
   width: 50%;
-  background: url("./assets/images/slider-bg-right.jpg");
+  background: url('./assets/images/slider-bg-right.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -263,7 +264,7 @@ header .hamburger {
 .slider .info-container .col-40 {
   width: 50%;
   padding-left: 5%;
-  background: url("./assets/images/slider-bg-left2.jpg");
+  background: url('./assets/images/slider-bg-left2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -297,10 +298,10 @@ header .hamburger {
   margin-bottom: 25px;
 }
 .slider .info-container .btn {
-  background: #41976D;
+  background: #41976d;
   color: #fff;
   border-radius: 20px;
-  font-family: "Lato", sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
   min-width: 20%;
   max-width: 35%;
   display: flex;
@@ -314,11 +315,11 @@ header .hamburger {
   margin: 20px 0;
 }
 .slider .info-container .btn::after {
-  content: "";
+  content: '';
 }
 .slider .info-container .btn:hover {
   background: #fff;
-  color: #41976D;
+  color: #41976d;
   transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 1600px) {
@@ -400,22 +401,27 @@ header .hamburger {
     font-size: 200% !important;
   }
 }
+@media screen and (max-width: 800px) {
+  .proposal-column-50 {
+    padding-left: 7%;
+  }
+}
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 801px) {
   .services-column-50 {
     padding-left: 14%;
     padding-right: 6%;
   }
   .services .servicios-grupo img {
-    padding-left:0% !important;
+    padding-left: 0% !important;
   }
-  .proposal-column-50{
-    padding:0%!important;
-    padding-top:10%!important;
+  .proposal-column-50 {
+    padding: 0% !important;
+    padding-top: 10% !important;
   }
   .proposal .column-50 p {
     width: 60% !important;
-}
+  }
 }
 
 .proposal .column-50 p {
@@ -487,7 +493,7 @@ header .hamburger {
   text-align: center;
   width: 50%;
 }
-.services .icon-container .esp h3{
+.services .icon-container .esp h3 {
   width: 70%;
 }
 @media screen and (max-width: 600px) {
@@ -520,7 +526,6 @@ header .hamburger {
     background-size: contain;
   }
 }
-
 
 @media screen and (max-width: 800px) {
   .services .contenedor {
@@ -570,10 +575,8 @@ header .hamburger {
   }
   .services .btn-es {
     font-size: 80%;
-
   }
 }
-
 
 .development {
   justify-content: center;
@@ -628,12 +631,12 @@ header .hamburger {
   background: #838383;
   border-radius: 15px;
 }
-@media screen and (max-width:1128px) {
-  .development .slide{
-    margin-bottom:80px;
+@media screen and (max-width: 1128px) {
+  .development .slide {
+    margin-bottom: 80px;
   }
   .development .btn {
-    max-width: 70%!important;
+    max-width: 70% !important;
   }
 }
 .development .slide img {
@@ -714,7 +717,7 @@ header .hamburger {
 .partners {
   height: 160vh;
   /*background: url("assets/images/partners-bg.svg");*/
-  background: linear-gradient(#337554, #41976D);
+  background: linear-gradient(#337554, #41976d);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -755,7 +758,6 @@ header .hamburger {
   align-content: center;
 }
 
-
 @media screen and (max-width: 2000px) {
   .partners {
     height: 135vh;
@@ -794,8 +796,6 @@ header .hamburger {
   .partners .partners-4 img {
     max-width: 15%;
   }
-
-
 }
 @media screen and (max-width: 600px) {
   .partners {
@@ -808,7 +808,6 @@ header .hamburger {
     font-size: 200%;
   }
 }
-
 
 .contact {
   padding-top: 3%;
@@ -840,7 +839,8 @@ header .hamburger {
   align-items: center;
   align-content: center;
 }
-.contact .column-50 form input, .contact .column-50 form textarea {
+.contact .column-50 form input,
+.contact .column-50 form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   outline: none;
@@ -850,7 +850,8 @@ header .hamburger {
   padding: 10px 25px;
   margin: 10px 0;
 }
-.contact .column-50 form input::placeholder, .contact .column-50 form textarea::placeholder {
+.contact .column-50 form input::placeholder,
+.contact .column-50 form textarea::placeholder {
   color: #fff;
 }
 .contact .column-50 form .btn {
@@ -874,7 +875,7 @@ header .hamburger {
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
-  font-family: "Poppins", sa  ns-serif !important
+  font-family: 'Poppins', sa ns-serif !important;
 }
 @media screen and (max-width: 800px) {
   .contact .column-50 .info-container {
