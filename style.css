@@ -534,6 +534,10 @@ header .hamburger {
   .services .btn {
     left: 32%;
   }
+  .services .btn-es {
+    font-size: 85%;
+
+  }
 }
 
 
@@ -666,7 +670,7 @@ header .hamburger {
 } */
 
 .partners {
-  height: 135vh;
+  height: 160vh;
   /*background: url("assets/images/partners-bg.svg");*/
   background: linear-gradient(#337554, #41976D);
   background-position: center;
@@ -711,7 +715,13 @@ header .hamburger {
 
 @media screen and (min-width: 2000px) {
   .partners {
-    height:140vh;
+    height:180vh;
+  }
+}
+@media screen and (max-width: 1850px) {
+  .partners {
+    height: 137vh;
+    padding: 5%;
   }
 }
 @media screen and (max-width: 1600px) {
