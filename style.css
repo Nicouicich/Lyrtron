@@ -323,7 +323,7 @@ header .hamburger {
     height: 100vh;
   }
   .slider .info-container .col-40 .text {
-    font-size: 270% !important;
+    font-size: 260% !important;
     width: 90% !important;
   }
   .slider .info-container .col-40 .btn {
@@ -567,7 +567,7 @@ header .hamburger {
     left: 32%;
   }
   .services .btn-es {
-    font-size: 85%;
+    font-size: 80%;
 
   }
 }
