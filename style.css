@@ -101,7 +101,7 @@ body {
 }
 
 .slick-arrow-prev {
-  top: 47em !important;
+  top: 37em !important;
   width: 5% !important;
   left: 5% !important;
 }
@@ -112,7 +112,7 @@ body {
 }
 
 .slick-arrow-next {
-  top: 47em !important;
+  top: 37em !important;
   width: 5% !important;
   right: 5% !important;
 }
@@ -276,7 +276,7 @@ header .hamburger {
   align-content: center;
 }
 .slider .info-container .text {
-  font-size: 330%;
+  font-size: 360%;
   line-height: 1.2;
   color: #fff;
   text-transform: uppercase;
@@ -284,8 +284,7 @@ header .hamburger {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  width: 70%;
-  margin-bottom: 50px;
+  width: 100%;
 }
 @media screen and (max-width: 600px) {
   .slider .info-container .text {
@@ -332,7 +331,7 @@ header .hamburger {
     height: 100vh;
   }
   .slider .info-container .col-40 .text {
-    font-size: 230% !important;
+    font-size: 260% !important;
     width: 90% !important;
   }
   .slider .info-container .col-40 .btn {
@@ -530,14 +529,13 @@ header .hamburger {
 @media screen and (max-width: 800px) {
   .services .contenedor {
     padding: 0 5%;
-    padding-top: 20%;
   }
   .services .contenedor .column-50 {
     width: 100%;
   }
-  .services .servicios-grupo {
+  /*.services .servicios-grupo {
     display: none;
-  }
+  } */
   .services .icon-container {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -627,7 +625,7 @@ header .hamburger {
   align-items: center;
   align-content: center;
   padding: 20px 50px;
-  margin: 130px 20px;
+  margin: 0px 20px 130px 20px;
   background: #838383;
   border-radius: 15px;
 }
@@ -715,7 +713,6 @@ header .hamburger {
 } */
 
 .partners {
-  height: 120vh;
   /*background: url("assets/images/partners-bg.svg");*/
   background: linear-gradient(#337554, #41976d);
   background-position: center;
@@ -758,15 +755,15 @@ header .hamburger {
   align-content: center;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 4000px) {
   .partners {
-    height: 112vh;
+    height: 1300px;
     padding: 5%;
   }
 }
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 110vh;
+    height: 950px;
     padding: 5%;
   }
   .partners .title-bg {
@@ -799,7 +796,7 @@ header .hamburger {
 }
 @media screen and (max-width: 600px) {
   .partners {
-    height: 82vh;
+    height: 700px;
   }
   .partners .title-bg {
     width: 50%;
@@ -1109,7 +1106,7 @@ header .hamburger {
 
 @media screen and (max-width: 1100px) {
   h1 {
-    font-size: 200% !important;
+    font-size: 195% !important;
   }
 }
 
