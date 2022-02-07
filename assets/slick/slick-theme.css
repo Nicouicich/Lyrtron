@@ -143,9 +143,9 @@
     }
 }
 
-@media screen and (max-width:799px){
-    .slick-dots li button {
-    display:none;
+@media screen and (max-width:600px){
+    .slick-dots li, .slick-dots li button {
+        height: 0px;
     }
     
 }
