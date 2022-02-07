@@ -708,6 +708,12 @@ header .hamburger {
   align-items: center;
   align-content: center;
 }
+
+@media screen and (min-width: 2000px) {
+  .partners {
+    height:140vh;
+  }
+}
 @media screen and (max-width: 1600px) {
   .partners {
     height: 130vh;
