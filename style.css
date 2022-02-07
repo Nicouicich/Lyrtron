@@ -652,12 +652,13 @@ header .hamburger {
   height: 350px;
   object-fit: cover;
   margin: auto;
+  border-radius: 6%;
 }
 @media screen and (max-width: 800px) {
   .development .slide img {
     width: 398px;
     height: 335px;
-    border-radius: 20px;
+    border-radius: 6%;
   }
 }
 @media screen and (max-width: 600px) {
