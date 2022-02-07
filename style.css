@@ -523,12 +523,25 @@ header .hamburger {
   }
 }
 
+.services .btn {
+  left: 45%;
+  min-width: 10%;
+  padding: 15px;
+  text-transform: uppercase;
+  margin: 80px 0 40px;
+}
+@media screen and (max-width: 800px) {
+  .services .btn {
+    left: 32%;
+  }
+}
+
+
 .development {
-  padding: 10% 0;
   justify-content: center;
   position: relative;
 }
-.development .btn {
+/* .development .btn {
   z-index: 9999;
   position: absolute;
   top: 0;
@@ -542,6 +555,7 @@ header .hamburger {
     left: 32%;
   }
 }
+*/
 .development .page-bg {
   position: absolute;
   width: 100%;
