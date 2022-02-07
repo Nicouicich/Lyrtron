@@ -640,7 +640,7 @@ header .hamburger {
     padding: 20px 10px;
   }
 }
-@media screen and (max-width: 1600px) {
+/*@media screen and (max-width: 1600px) {
   .development h1 {
     padding-top: 10%;
   }
@@ -649,20 +649,20 @@ header .hamburger {
   .development h1 {
     padding-top: 15%;
   }
-}
+}*/
 @media screen and (max-width: 800px) {
-  .development h1 {
+  /*.development h1 {
     padding-top: 30%;
-  }
+  }*/
   .development .slide img {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .development h1 {
     padding-top: 55%;
   }
-}
+} */
 
 .partners {
   height: 115vh;
