@@ -1006,6 +1006,11 @@ header .hamburger {
     justify-content: center;
   }
 }
+@media screen and (max-width: 800px) {
+  .popup .popup-container h1 {
+    margin-top: 40px;
+  }
+}
 .popup .popup-container .close {
   position: absolute;
   top: 5%;
