@@ -594,6 +594,7 @@ header .hamburger {
   width: 450px;
   height: 350px;
   object-fit: cover;
+  margin: auto;
 }
 @media screen and (max-width: 800px) {
   .development .slide img {
