@@ -733,7 +733,7 @@ header .hamburger {
 .partners .title-bg {
   width: 50%;
   padding: 15px 0;
-  margin: 30px auto 80px auto;
+  margin: 30px auto 55px auto;
   border-radius: 50px;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.4);
   background: rgba(255, 255, 255, 0.1);
@@ -765,15 +765,10 @@ header .hamburger {
   align-content: center;
 }
 
-@media screen and (max-width: 4000px) {
-  .partners {
-    height: 1300px;
-    padding: 5%;
-  }
-}
+
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 950px;
+    height: 900px;
     padding: 5%;
   }
   .partners .title-bg {
@@ -806,16 +801,22 @@ header .hamburger {
 }
 @media screen and (max-width: 600px) {
   .partners {
-    height: 700px;
+    height: 600px;
   }
   .partners .title-bg {
-    width: 50%;
+    width: 60%;
     font-size: 60%;
   }
   .partners .title-bg h1 {
     font-size: 200%;
   }
 }
+/* Para 600px */  
+@media only screen and (max-width: 600px) and (min-width: 540px) { 
+  .partners {
+    height: 660px;
+  } 
+}  
 
 .contact {
   padding-top: 3%;
