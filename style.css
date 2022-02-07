@@ -885,6 +885,19 @@ header .hamburger {
   align-content: flex-start;
   font-family: 'Poppins', sa ns-serif !important;
 }
+.contact-column-50{
+  padding-left:8%!important;
+}
+@media screen and (max-width: 1000px) {
+  .contact-column-50{
+    padding-left:2%!important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact-column-50 p{
+    width: 90%!important;
+  }
+}
 @media screen and (max-width: 800px) {
   .contact .column-50 .info-container {
     height: auto;
