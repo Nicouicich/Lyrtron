@@ -760,13 +760,13 @@ header .hamburger {
 
 @media screen and (max-width: 2000px) {
   .partners {
-    height: 130vh;
+    height: 110vh;
     padding: 5%;
   }
 }
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 130vh;
+    height: 105vh;
     padding: 5%;
   }
   .partners .title-bg {
