@@ -165,7 +165,7 @@ header nav {
   backdrop-filter: blur(50px);
   border-radius: 20px;
   color: #fff;
-  width: 30%;
+  width: 40%;
   padding: 10px 25px;
 }
 header nav li a {
@@ -190,7 +190,13 @@ header .hamburger {
     width: 20%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1500px) {
+  header nav {
+    width: 45%;
+  }
+
+}
+@media screen and (max-width: 1000px) {
   header .hamburger {
     display: block;
     cursor: pointer;
