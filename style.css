@@ -392,6 +392,24 @@ header .hamburger {
     font-size: 200% !important;
   }
 }
+
+@media screen and (min-width: 850px) {
+  .services-column-50 {
+    padding-left: 14%;
+    padding-right: 6%;
+  }
+  .services .servicios-grupo img {
+    padding-left:0% !important;
+  }
+  .proposal-column-50{
+    padding:0%!important;
+    padding-top:10%!important;
+  }
+  .proposal .column-50 p {
+    width: 60% !important;
+}
+}
+
 .proposal .column-50 p {
   font-size: 110%;
   margin: 30px 0;
