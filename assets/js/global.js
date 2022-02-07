@@ -112,6 +112,7 @@ $(document).ready(function () {
     arrows: true,
     dots: true,
     centerMode: true,
+    appendDots: $('.slick-slider-dots'),
     prevArrow:
       "<img class='a-left control-c prev slick-prev' src='./assets/images/left-arrow.svg'>",
     nextArrow:
