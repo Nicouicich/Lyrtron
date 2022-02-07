@@ -713,14 +713,10 @@ header .hamburger {
   align-content: center;
 }
 
-@media screen and (min-width: 2000px) {
+
+@media screen and (max-width: 2000px) {
   .partners {
-    height:180vh;
-  }
-}
-@media screen and (max-width: 1850px) {
-  .partners {
-    height: 137vh;
+    height: 135vh;
     padding: 5%;
   }
 }
