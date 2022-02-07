@@ -795,13 +795,14 @@ header .hamburger {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: auto;
-  padding: 5% 25%;
+  padding: 5% 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
+  font-family: "Poppins", sa  ns-serif !important
 }
 @media screen and (max-width: 800px) {
   .contact .column-50 .info-container {
@@ -866,7 +867,7 @@ header .hamburger {
   width: 100%;
   margin: 10px 0;
   font-size: 120%;
-  max-width: 55%;
+  max-width: 60%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -891,11 +892,11 @@ header .hamburger {
 }
 .contact .column-50 .info-container ul li span {
   width: 80%;
-  padding-left: 5%;
+  padding-left: 4%;
 }
 @media screen and (max-width: 600px) {
   .contact .column-50 .info-container ul li span {
-    width: 85%;
+    width: 75%;
     padding-left: 10px;
     max-width: unset !important;
   }
