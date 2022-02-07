@@ -773,7 +773,7 @@ header .hamburger {
 }
 @media screen and (max-width: 600px) {
   .partners {
-    height: 110vh;
+    height: 80vh;
   }
   .partners .title-bg {
     width: 100%;
