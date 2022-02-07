@@ -749,7 +749,7 @@ header .hamburger {
 }
 @media screen and (max-width: 600px) {
   .partners {
-    height: 75vh;
+    height: 92vh;
   }
   .partners .title-bg {
     width: 100%;
@@ -758,6 +758,7 @@ header .hamburger {
     font-size: 200%;
   }
 }
+
 
 .contact {
   padding-top: 3%;
