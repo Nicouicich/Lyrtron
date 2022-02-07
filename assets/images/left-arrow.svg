@@ -1,17 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="113" viewBox="0 0 113 113">
-  <defs>
-    <filter id="Rectangle_153" x="0" y="0" width="113" height="113" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-opacity="0.251"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Group_179" data-name="Group 179" transform="translate(1689 3906) rotate(180)">
-    <g transform="matrix(-1, 0, 0, -1, 1689, 3906)" filter="url(#Rectangle_153)">
-      <rect id="Rectangle_153-2" data-name="Rectangle 153" width="95" height="95" rx="20" transform="translate(104 101) rotate(180)" fill="#41976d"/>
-    </g>
-    <path id="Path_312" data-name="Path 312" d="M1605,3650l24,30-24,30" transform="translate(17 173)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
-  </g>
+<svg id="IZQ" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <circle id="Elipse_26" data-name="Elipse 26" cx="45" cy="45" r="45" fill="#4e4e4e"/>
+  <path id="Trazado_314" data-name="Trazado 314" d="M-7698.419,4094.419-7720,4116l21.581,21.581" transform="translate(7752.21 -4071)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
 </svg>
