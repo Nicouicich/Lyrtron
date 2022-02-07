@@ -51,10 +51,18 @@ body {
 
 .column-50 {
   width: 50%;
-  padding: 0 5%;
+  padding-right: 5%;
+  padding-left:2%;
 }
 .column-50 h1 {
   font-size: 300%;
+}
+.services-column-50 {
+  padding-left: 14%;
+  padding-right: 6%;
+}
+.services .servicios-grupo img {
+  padding-left:0% !important;
 }
 
 .separator {
@@ -382,7 +390,7 @@ header .hamburger {
 }
 .proposal .column-50 {
   width: 50%;
-  padding: 10%;
+  padding-top: 10%;
 }
 .proposal .column-50 h1 {
   font-size: 300%;
@@ -413,7 +421,7 @@ header .hamburger {
 .proposal .column-50 p {
   font-size: 110%;
   margin: 30px 0;
-  width: 90%;
+  width: 70%;
 }
 @media screen and (max-width: 1100px) {
   .proposal .column-50 p {
