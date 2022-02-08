@@ -434,18 +434,43 @@ header .hamburger {
   margin: 30px 0;
   width: 70%;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1600px) {
+  .proposal {
+    margin-top: 0;
+  }
   .proposal .column-50 p {
-    font-size: 85% !important;
-    width: 90%;
+    width: 70%;
   }
 }
+
 @media screen and (max-width: 1400px) {
   .proposal .column-50 p {
     font-size: 85% !important;
     width: 90%!important;
   }
 }
+@media screen and (max-width: 1100px) {
+  .proposal .column-50 p {
+    font-size: 85% !important;
+    width: 90%!important;
+  }
+}
+@media screen and (max-width: 800px) {
+ 
+  
+  .proposal .column-50 {
+    width: 100%!important;
+  }
+  .contenedor .chipset{
+    width: 95% !important;
+  }
+  .proposal .column-50 p{
+    font-size: 100% !important;
+    width: 100%!important;
+  }
+
+}
+
   
 .proposal .column-50 .pin-container {
   display: flex;
@@ -465,22 +490,7 @@ header .hamburger {
   height: 100vh;
   height: auto;
 }
-@media screen and (max-width: 1600px) {
-  .proposal {
-    margin-top: 0;
-  }
-  .proposal .column-50 p {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 800px) {
-  /*.proposal .chipset {
-    display: none;
-  }*/
-  .proposal .column-50 {
-    width: 90%;
-  }
-}
+
 
 .services {
   padding: 5% 0;
