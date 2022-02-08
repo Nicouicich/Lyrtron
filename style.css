@@ -432,7 +432,7 @@ header .hamburger {
 .proposal .column-50 p {
   font-size: 120%;
   margin: 30px 0;
-  width: 70%;
+  width: 55%;
 }
 @media screen and (max-width: 1600px) {
   .proposal {
@@ -445,13 +445,13 @@ header .hamburger {
 
 @media screen and (max-width: 1400px) {
   .proposal .column-50 p {
-    font-size: 85% !important;
+    font-size: 100% !important;
     width: 90%!important;
   }
 }
 @media screen and (max-width: 1100px) {
   .proposal .column-50 p {
-    font-size: 85% !important;
+    font-size: 90% !important;
     width: 90%!important;
   }
 }
