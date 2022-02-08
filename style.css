@@ -106,8 +106,6 @@ body {
   left: 5% !important;
 }
 
-
-
 .slick-arrow-next {
   top: 39em !important;
   width: 5% !important;
@@ -428,9 +426,7 @@ header .hamburger {
     padding: 0% !important;
     padding-top: 10% !important;
   }
-  .proposal .column-50 p {
-    width: 50% !important;
-  }
+  
 }
 
 .proposal .column-50 p {
@@ -440,9 +436,17 @@ header .hamburger {
 }
 @media screen and (max-width: 1100px) {
   .proposal .column-50 p {
-    font-size: 100% !important;
+    font-size: 85% !important;
+    width: 90%;
   }
 }
+@media screen and (max-width: 1400px) {
+  .proposal .column-50 p {
+    font-size: 85% !important;
+    width: 90%!important;
+  }
+}
+  
 .proposal .column-50 .pin-container {
   display: flex;
   flex-direction: row;
@@ -466,7 +470,7 @@ header .hamburger {
     margin-top: 0;
   }
   .proposal .column-50 p {
-    width: 100%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -474,7 +478,7 @@ header .hamburger {
     display: none;
   }*/
   .proposal .column-50 {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -766,7 +770,6 @@ header .hamburger {
   align-content: center;
 }
 
-
 @media screen and (max-width: 1600px) {
   .partners {
     height: 900px;
@@ -812,12 +815,12 @@ header .hamburger {
     font-size: 200%;
   }
 }
-/* Para 600px */  
-@media only screen and (max-width: 600px) and (min-width: 540px) { 
+/* Para 600px */
+@media only screen and (max-width: 600px) and (min-width: 540px) {
   .partners {
     height: 660px;
-  } 
-}  
+  }
+}
 
 .contact {
   padding-top: 3%;
@@ -887,17 +890,17 @@ header .hamburger {
   align-content: flex-start;
   font-family: 'Poppins', sa ns-serif !important;
 }
-.contact-column-50{
-  padding-left:8%!important;
+.contact-column-50 {
+  padding-left: 8% !important;
 }
 @media screen and (max-width: 1000px) {
-  .contact-column-50{
-    padding-left:2%!important;
+  .contact-column-50 {
+    padding-left: 2% !important;
   }
 }
 @media screen and (max-width: 1000px) {
-  .contact-column-50 p{
-    width: 90%!important;
+  .contact-column-50 p {
+    width: 90% !important;
   }
 }
 @media screen and (max-width: 800px) {
