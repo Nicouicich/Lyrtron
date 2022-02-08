@@ -410,15 +410,12 @@ header .hamburger {
 }
 @media screen and (max-width: 800px) {
   .proposal-column-50 {
-    padding-left: 7%;
+    padding-left: 9%;
+    padding-right: 10%;
   }
 }
 
 @media screen and (min-width: 801px) {
-  .services-column-50 {
-    padding-left: 14%;
-    padding-right: 6%;
-  }
   .services .servicios-grupo img {
     padding-left: 0% !important;
   }
@@ -426,7 +423,25 @@ header .hamburger {
     padding: 0% !important;
     padding-top: 10% !important;
   }
-  
+}
+@media screen and (max-width: 1200px) {
+  .services-column-50 {
+    padding-left: 5%;
+    padding-right: 6%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services-column-50 {
+    padding-left: 14%;
+    padding-right: 6%;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+  .icon-container .icon img{
+    max-width: 87px;
+    width: 87px;
+    height: 87px;
+  }
 }
 
 .proposal .column-50 p {
@@ -446,32 +461,28 @@ header .hamburger {
 @media screen and (max-width: 1400px) {
   .proposal .column-50 p {
     font-size: 100% !important;
-    width: 90%!important;
+    width: 90% !important;
   }
 }
 @media screen and (max-width: 1100px) {
   .proposal .column-50 p {
     font-size: 90% !important;
-    width: 90%!important;
+    width: 90% !important;
   }
 }
 @media screen and (max-width: 800px) {
- 
-  
   .proposal .column-50 {
-    width: 100%!important;
+    width: 100% !important;
   }
-  .contenedor .chipset{
+  .contenedor .chipset {
     width: 95% !important;
   }
-  .proposal .column-50 p{
+  .proposal .column-50 p {
     font-size: 100% !important;
-    width: 100%!important;
+    width: 100% !important;
   }
-
 }
 
-  
 .proposal .column-50 .pin-container {
   display: flex;
   flex-direction: row;
@@ -490,7 +501,6 @@ header .hamburger {
   height: 100vh;
   height: auto;
 }
-
 
 .services {
   padding: 5% 0;
