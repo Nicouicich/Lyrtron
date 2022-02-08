@@ -429,12 +429,12 @@ header .hamburger {
     padding-top: 10% !important;
   }
   .proposal .column-50 p {
-    width: 60% !important;
+    width: 50% !important;
   }
 }
 
 .proposal .column-50 p {
-  font-size: 110%;
+  font-size: 120%;
   margin: 30px 0;
   width: 70%;
 }
@@ -565,9 +565,9 @@ header .hamburger {
   .services .contenedor.full {
     padding-top: unset;
   }
-  .services .contenedor .column-50.servicios-grupo {
+  /*.services .contenedor .column-50.servicios-grupo {
     display: none;
-  }
+  }*/
 }
 
 .services .btn {
