@@ -798,7 +798,7 @@ header .hamburger {
 
 @media screen and (max-width: 1600px) {
   .partners {
-    height: 900px;
+    height: 920px;
     padding: 5%;
   }
   .partners .title-bg {
@@ -840,11 +840,60 @@ header .hamburger {
   .partners .title-bg h1 {
     font-size: 200%;
   }
+  .partners .partners1 {
+    max-width: 100%;
+    width: 90%;
+  }
+  .partners .partners2 img{
+    max-width: 20%;
+  }
+  .partners .partners3 {
+    max-width: 90%;
+  }
+  .partners .partners3 img {
+    min-height: 30px;
+  }
+  .partners .partners3 .petra {
+    max-height: 100px;
+  }
+
+  .partners .partners4 img{
+    max-width: 20%;
+    width: 20%;
+  }
+  .partners .partners5 {
+    width: 100%;
+  }
+  .partners .partners5 img{
+    max-width: 40%;
+    width: 25%;
+  }
+  .partners .partners5 .xuv{
+    min-height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
+
+@media screen and (max-width: 900px) {
+  .partners {
+    height: 780px;
+  }
+  
+  .partners .partners3 .petra {
+    max-height: 120px;
+  }
+
+  .partners .partners4 img{
+    max-width: 20%;
+  }
+}
+
+
 /* Para 600px */
 @media only screen and (max-width: 600px) and (min-width: 540px) {
   .partners {
-    height: 660px;
+    height: 700px;
   }
 }
 
