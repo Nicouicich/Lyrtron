@@ -829,6 +829,20 @@ header .hamburger {
     max-width: 15%;
   }
 }
+@media screen and (max-width: 900px) {
+  .partners {
+    height: 780px;
+  }
+  
+  .partners .partners3 .petra {
+    max-height: 120px;
+  }
+
+  .partners .partners4 img{
+    max-width: 20%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .partners {
     height: 600px;
@@ -875,19 +889,7 @@ header .hamburger {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .partners {
-    height: 780px;
-  }
-  
-  .partners .partners3 .petra {
-    max-height: 120px;
-  }
 
-  .partners .partners4 img{
-    max-width: 20%;
-  }
-}
 
 
 /* Para 600px */
