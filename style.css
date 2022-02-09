@@ -898,6 +898,11 @@ header .hamburger {
     height: 700px;
   }
 }
+@media only screen and (max-width: 540px) and (min-width: 450px) {
+  .partners {
+    height: 650px;
+  }
+}
 
 .contact {
   padding-top: 3%;
