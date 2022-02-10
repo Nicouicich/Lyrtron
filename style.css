@@ -799,6 +799,27 @@ header .hamburger {
   align-items: center;
   align-content: center;
 }
+.partners .partners5 .xuv{
+  max-width: 40%;
+  width: 35%;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+.partners .partners1 .grupo-msa{
+  max-width: 33%;
+  width: 33%;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+.partners .partners3 .semitech{
+  max-width: 30%;
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
 
 @media screen and (max-width: 1600px) {
   .partners {
@@ -832,27 +853,65 @@ header .hamburger {
   .partners .partners-4 img {
     max-width: 15%;
   }
+
+  .partners .partners5 img{
+    max-width: 40%;
+    width: 14%;
+  }
+  .partners .partners5 .xuv{
+    max-width: 20%;
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  }
+  .partners .partners3 .semitech {
+    width: 80%;
+  }
+
 }
 @media screen and (max-width: 1400px) {
 
   .partners .partners3 .petra {
     max-height: 120px;
   }
-
-
 }
 
+@media screen and (max-width: 1150px) {
+
+  .partners {
+    height: 820px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .partners {
+    height: 800px;
+  }
+}
 @media screen and (max-width: 900px) {
   .partners {
-    height: 815px;
+    height: 800px;
   }
   
   .partners .partners3 .petra {
-    max-height: 120px;
+    max-height: 100px;
   }
 
   .partners .partners4 img{
     max-width: 20%;
+  }
+  .partners .partners5 img{
+    max-width: 40%;
+    width: 23%;
+  }
+  .partners .partners5 .xuv{
+    max-width: 30%;
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
   }
 }
 
@@ -897,9 +956,10 @@ header .hamburger {
     width: 25%;
   }
   .partners .partners5 .xuv{
-    min-height: 45px;
+    width: 35%;
     margin-left: 5px;
     margin-right: 5px;
+    
   }
 }
 
